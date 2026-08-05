@@ -50,6 +50,6 @@ export const faq: FaqItem[] = [
   {
     question: '¿Qué tecnologías usa GUBA ESTUDIO LAB?',
     answer:
-      'GUBA ESTUDIO LAB construye sitios estáticos con generadores modernos que producen HTML ligero y optimizado para velocidad y posicionamiento en buscadores, y plataformas dinámicas con bases de datos, autenticación y paneles de administración. La elección de tecnología parte del objetivo del proyecto, no al revés: no se agrega complejidad que el negocio no necesite.',
+      'GUBA ESTUDIO LAB trabaja con tecnologías de vanguardia: generadores de sitios de última generación que producen páginas ultraligeras y optimizadas para velocidad y posicionamiento en buscadores, y plataformas dinámicas con bases de datos, autenticación y paneles de administración. La elección de tecnología parte del objetivo del proyecto, no al revés: no se agrega complejidad que el negocio no necesite.',
   },
 ];
