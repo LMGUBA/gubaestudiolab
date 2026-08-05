@@ -1,0 +1,114 @@
+---
+import Icon from './Icon.astro';
+import { site } from '../config';
+
+// Decoración de píxeles del fondo (posiciones del diseño original, solo 3xl).
+const pixels = [
+  [85, 92],
+  [117, 92],
+  [149, 92],
+  [85, 124],
+  [149, 124],
+  [85, 156],
+  [117, 156],
+  [149, 156],
+  [1240, 520],
+  [1272, 520],
+  [1304, 520],
+  [1240, 552],
+  [1304, 552],
+  [1240, 584],
+  [1272, 584],
+  [1304, 584],
+];
+---
+
+<section
+  id="contacto"
+  class="box-border w-full h-auto 3xl:h-[720px] shrink-0 bg-[#0062FF] overflow-hidden relative flex flex-col items-center px-5 sm:px-8 lg:px-12 py-16 sm:py-20 lg:py-24 3xl:block 3xl:px-0 3xl:py-0"
+>
+  <div aria-hidden="true" class="hero-aurora"></div>
+
+  <div aria-hidden="true" class="absolute inset-0 pointer-events-none hidden 3xl:block">
+    {
+      pixels.map(([left, top], i) => (
+        <div
+          class="hero-pixel box-border w-[18px] h-[18px] absolute bg-[#FFFFFF24]"
+          style={`left:${left}px;top:${top}px;--pixel-delay:${i * 160}ms`}
+        />
+      ))
+    }
+  </div>
+
+  <div
+    class="box-border w-full lg:w-[900px] h-fit flex flex-col gap-6 3xl:gap-[28px] justify-start items-center 3xl:absolute 3xl:left-[190px] 3xl:top-[130px] 3xl:w-[1060px] 3xl:[z-index:16]"
+  >
+    <p
+      data-reveal
+      class="text-[11px]/[normal] sm:text-[12px]/[normal] box-border text-[#C8FF2E] font-['Geist_Mono',system-ui,sans-serif] font-bold tracking-[1px] text-center 3xl:text-left 3xl:[white-space:nowrap]"
+    >
+      EMPECEMOS POR TU PRÓXIMA WEB
+    </p>
+    <h2
+      data-reveal
+      style="--reveal-delay:100ms"
+      class="text-[clamp(34px,5.6vw,76px)]/[1] 3xl:text-[76px]/[76px] box-border w-full text-[#FFFFFF] font-[Anton,system-ui,sans-serif] font-normal text-center"
+    >
+      ¿NECESITAS UNA PÁGINA ESTÁTICA O UNA WEB DINÁMICA?
+    </h2>
+    <p
+      data-reveal
+      style="--reveal-delay:200ms"
+      class="text-[17px]/[25px] sm:text-[19px]/[28px] box-border w-full 3xl:w-[650px] text-[#FFFFFFD9] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-center"
+    >
+      Cuéntanos qué quieres comunicar, publicar o gestionar. Te ayudaremos a definir el alcance
+      correcto y un primer lanzamiento realista.
+    </p>
+    <div
+      data-reveal
+      style="--reveal-delay:300ms"
+      class="box-border w-full sm:w-fit h-fit shrink-0 flex flex-col sm:flex-row gap-3 sm:gap-[14px] justify-start items-stretch sm:items-center"
+    >
+      <a
+        href={site.whatsapp}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="u-btn u-btn--lime u-sheen u-icon-host box-border w-full sm:w-fit sm:shrink-0 h-fit flex flex-row gap-[10px] p-[15px_24px] sm:p-[16px_24px] justify-center sm:justify-start items-center bg-[#C8FF2E] rounded-[9999px]"
+      >
+        <Icon
+          name="message-circle"
+          fill="#0B1020"
+          class="u-icon-pop box-border w-[19px] shrink-0 h-[19px]"
+        />
+        <span
+          class="text-[16px]/[normal] box-border text-[#0B1020] font-['Funnel_Sans',system-ui,sans-serif] font-extrabold text-left [white-space:nowrap]"
+        >
+          Escríbenos por WhatsApp
+        </span>
+      </a>
+      <a
+        href={site.email}
+        class="u-btn u-btn--ghost u-icon-host box-border w-full sm:w-fit sm:shrink-0 h-fit flex flex-row gap-[10px] p-[15px_24px] sm:p-[16px_24px] justify-center sm:justify-start items-center [outline:1px_solid_#FFFFFF80] [outline-offset:-0.5px] rounded-[9999px]"
+      >
+        <Icon name="mail" fill="#FFFFFF" class="u-icon-pop box-border w-[18px] shrink-0 h-[18px]" />
+        <span
+          class="text-[16px]/[normal] box-border text-[#FFFFFF] font-['Funnel_Sans',system-ui,sans-serif] font-bold text-left [white-space:nowrap]"
+        >
+          Enviar un correo
+        </span>
+      </a>
+    </div>
+    <div
+      data-reveal
+      style="--reveal-delay:380ms"
+      class="box-border w-fit max-w-full h-fit shrink-0 flex flex-row gap-[9px] justify-start items-center"
+    >
+      <div class="u-pulse box-border w-[8px] shrink-0 h-[8px] bg-[#C8FF2E] rounded-full"></div>
+      <p
+        class="text-[11px]/[normal] box-border text-[#FFFFFFB8] font-['Geist_Mono',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+      >
+        DISPONIBLE PARA NUEVOS PROYECTOS
+      </p>
+    </div>
+  </div>
+</section>

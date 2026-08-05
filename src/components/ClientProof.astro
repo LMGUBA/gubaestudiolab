@@ -1,0 +1,155 @@
+---
+import Icon from './Icon.astro';
+
+// Proyectos publicados: cada tarjeta enlaza entera a su sitio.
+const mixturaUrl = 'https://cevicheriarestaurantmixtura.vercel.app';
+const ecoproductsUrl = 'https://trazabilidad-app-production.up.railway.app';
+---
+
+<section
+  id="trabajo"
+  class="box-border w-full h-fit shrink-0 flex flex-col gap-12 sm:gap-16 3xl:gap-[70px] px-5 sm:px-8 lg:px-12 3xl:px-[120px] py-16 sm:py-20 lg:py-24 3xl:py-[110px] justify-start items-start bg-[#0B1020]"
+>
+  <div
+    class="box-border w-full h-fit shrink-0 flex flex-col lg:flex-row gap-6 lg:gap-0 justify-between items-start lg:items-end"
+  >
+    <div
+      data-reveal
+      class="box-border w-full lg:w-[60%] 3xl:w-[720px] lg:shrink-0 h-fit flex flex-col gap-[16px] justify-start items-start"
+    >
+      <h2
+        class="text-[clamp(30px,4.6vw,62px)]/[1.016] 3xl:text-[62px]/[63px] box-border w-full text-[#FFFFFF] font-[Anton,system-ui,sans-serif] font-normal text-left"
+      >
+        DOS MARCAS. DOS PRESENCIAS DIGITALES CON OBJETIVOS DISTINTOS.
+      </h2>
+    </div>
+    <p
+      data-reveal
+      style="--reveal-delay:120ms"
+      class="text-[17px]/[25px] sm:text-[18px]/[26px] box-border w-full lg:w-[30%] 3xl:w-[360px] lg:shrink-0 text-[#B6C0D4] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left"
+    >
+      Cada proyecto web parte del negocio, su audiencia y el contenido que necesita comunicar o
+      gestionar.
+    </p>
+  </div>
+
+  <div
+    class="box-border w-full h-auto 3xl:h-[430px] shrink-0 flex flex-col lg:flex-row gap-6 3xl:gap-[24px] justify-start items-stretch 3xl:items-start"
+  >
+    <a
+      href={mixturaUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      data-reveal="zoom"
+      data-spot
+      style="--spot:rgb(200 255 46 / 0.16)"
+      class="u-card u-card--onDark u-spot u-arrow-host box-border w-full lg:[flex:1_1_0] h-auto 3xl:h-full flex flex-col gap-8 3xl:gap-0 p-7 sm:p-9 3xl:p-[36px] justify-between items-start bg-[#14213D] [outline:1px_solid_#FFFFFF1F] [outline-offset:-0.5px] rounded-[8px]"
+    >
+      <div
+        class="box-border w-full h-fit shrink-0 flex flex-row flex-wrap gap-x-4 gap-y-3 justify-between items-center"
+      >
+        <img
+          src="/mixtura-logo.png"
+          alt="Logo oficial de Mixtura"
+          width="2234"
+          height="1028"
+          class="u-logo box-border w-[160px] sm:w-[210px] shrink-0 h-[70px] sm:h-[92px] object-contain rounded-[4px]"
+        />
+        <p
+          class="text-[11px]/[normal] box-border text-[#C8D1E4] font-['Geist_Mono',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+        >
+          CEVICHERÍA · RESTAURANT
+        </p>
+      </div>
+      <div class="box-border w-full h-fit shrink-0 flex flex-col gap-[14px] justify-start items-start">
+        <div class="box-border w-full h-fit shrink-0 flex flex-row gap-3 justify-between items-center">
+          <p
+            class="text-[11px]/[normal] box-border text-[#C8FF2E] font-['Geist_Mono',system-ui,sans-serif] font-bold text-left [white-space:nowrap]"
+          >
+            CLIENTE ACTUAL · VER PROYECTO
+          </p>
+          <Icon
+            name="arrow-up-right"
+            fill="#C8FF2E"
+            class="u-arrow box-border w-[20px] shrink-0 h-[20px]"
+          />
+        </div>
+        <h3
+          class="text-[clamp(28px,3.1vw,42px)]/[1.048] 3xl:text-[42px]/[44px] box-border w-full text-[#FFFFFF] font-[Anton,system-ui,sans-serif] font-normal text-left"
+        >
+          EL AUTÉNTICO SABOR DE PUCALLPA.
+        </h3>
+        <p
+          class="text-[16px]/[23px] box-border w-full text-[#C5CDDC] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left"
+        >
+          Una experiencia web enfocada en presentar su propuesta gastronómica, facilitar el contacto y
+          llevar el sabor amazónico a nuevos clientes.
+        </p>
+      </div>
+    </a>
+
+    <a
+      href={ecoproductsUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      data-reveal="zoom"
+      data-spot
+      style="--reveal-delay:140ms;--spot:rgb(255 255 255 / 0.45)"
+      class="u-card u-spot u-arrow-host box-border w-full lg:[flex:1_1_0] h-auto 3xl:h-full flex flex-col gap-8 3xl:gap-0 p-7 sm:p-9 3xl:p-[36px] justify-between items-start bg-[#C8FF2E] rounded-[8px]"
+    >
+      <div
+        class="box-border w-full h-fit shrink-0 flex flex-row flex-wrap gap-x-4 gap-y-3 justify-between items-center"
+      >
+        <img
+          src="/ecoproducts-logo.png"
+          alt="Logo oficial de Ecoproducts"
+          width="998"
+          height="278"
+          class="u-logo box-border w-[230px] sm:w-[300px] shrink-0 h-[62px] sm:h-[80px] object-contain"
+        />
+        <p
+          class="text-[11px]/[normal] box-border text-[#25300A] font-['Geist_Mono',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+        >
+          SOLUCIONES AMBIENTALES
+        </p>
+      </div>
+      <div class="box-border w-full h-fit shrink-0 flex flex-col gap-[14px] justify-start items-start">
+        <div class="box-border w-full h-fit shrink-0 flex flex-row gap-3 justify-between items-center">
+          <p
+            class="text-[11px]/[normal] box-border text-[#003EAD] font-['Geist_Mono',system-ui,sans-serif] font-bold text-left [white-space:nowrap]"
+          >
+            CLIENTE ACTUAL · VER PROYECTO
+          </p>
+          <Icon
+            name="arrow-up-right"
+            fill="#003EAD"
+            class="u-arrow box-border w-[20px] shrink-0 h-[20px]"
+          />
+        </div>
+        <h3
+          class="text-[clamp(28px,3.1vw,42px)]/[1.048] 3xl:text-[42px]/[44px] box-border w-full text-[#0B1020] font-[Anton,system-ui,sans-serif] font-normal text-left"
+        >
+          GESTIÓN AMBIENTAL CON SOLUCIONES INTEGRALES.
+        </h3>
+        <p
+          class="text-[16px]/[23px] box-border w-full text-[#25300A] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left"
+        >
+          Un sitio corporativo claro para organizar sus servicios ambientales, demostrar experiencia y
+          generar nuevas consultas comerciales.
+        </p>
+      </div>
+    </a>
+  </div>
+
+  <div
+    data-reveal
+    class="u-icon-host box-border w-full h-fit shrink-0 flex flex-row gap-[10px] justify-center items-center"
+  >
+    <Icon name="image-plus" fill="#8E9AB0" class="u-icon-pop box-border w-[16px] shrink-0 h-[16px]" />
+    <p
+      class="text-[11px]/[normal] box-border text-[#8E9AB0] font-['Geist_Mono',system-ui,sans-serif] font-normal text-center 3xl:text-left 3xl:[white-space:nowrap]"
+    >
+      PROYECTOS WEB EN DESARROLLO CON MARCAS REALES
+    </p>
+  </div>
+</section>

@@ -1,0 +1,41 @@
+---
+import '../styles/global.css';
+import { site } from '../config';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = site.name, description = site.description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton%3Awght%40400&family=Funnel+Sans%3Awght%40300..800&family=Geist+Mono%3Awght%40100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+    {/* Marca que hay JS antes de pintar: sin esto el contenido animado
+        parpadearía o quedaría oculto si el script falla. */}
+    <script is:inline>
+      document.documentElement.classList.add('js');
+    </script>
+  </head>
+  <body class="bg-[#0B1020]">
+    <slot />
+    <script>
+      import '../scripts/motion';
+    </script>
+  </body>
+</html>

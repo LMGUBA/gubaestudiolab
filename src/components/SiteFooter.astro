@@ -1,0 +1,85 @@
+---
+import { site } from '../config';
+
+const columns = [
+  {
+    heading: 'EXPLORA',
+    links: [
+      { label: 'Servicios', href: '#servicios' },
+      { label: 'Trabajo', href: '#trabajo' },
+      { label: 'Proceso', href: '#proceso' },
+    ],
+  },
+  {
+    heading: 'CONTACTO',
+    links: [
+      { label: 'WhatsApp', href: site.whatsapp },
+      { label: 'Correo', href: site.email },
+      { label: 'Pucallpa, Perú', href: '#contacto' },
+    ],
+  },
+];
+---
+
+<footer
+  class="box-border w-full h-fit shrink-0 flex flex-col gap-10 3xl:gap-[44px] px-5 sm:px-8 lg:px-12 3xl:px-[72px] pt-12 sm:pt-14 3xl:pt-[56px] pb-8 3xl:pb-[38px] justify-start items-start bg-[#0B1020]"
+>
+  <div
+    class="box-border w-full h-fit shrink-0 flex flex-col md:flex-row gap-10 md:gap-8 justify-between items-start"
+  >
+    <div
+      class="box-border w-full md:w-[42%] 3xl:w-[480px] md:shrink-0 h-fit flex flex-col gap-[16px] justify-start items-start"
+    >
+      <div class="u-icon-host box-border w-fit h-fit shrink-0 flex flex-row gap-[10px] justify-start items-center">
+        <div class="u-icon-pop box-border w-[14px] shrink-0 h-[28px] bg-[#C8FF2E]"></div>
+        <p
+          class="text-[24px]/[normal] sm:text-[28px]/[normal] box-border text-[#FFFFFF] font-[Anton,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+        >
+          GUBA ESTUDIO LAB
+        </p>
+      </div>
+      <p
+        class="text-[16px]/[23px] box-border w-full text-[#AEB8CA] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left"
+      >
+        Diseño y desarrollo de páginas web estáticas y dinámicas. Automatización disponible como
+        servicio independiente.
+      </p>
+    </div>
+    <div
+      class="box-border w-full md:w-fit md:shrink-0 h-fit flex flex-row gap-10 sm:gap-[60px] justify-start items-start"
+    >
+      {
+        columns.map((column) => (
+          <div class="box-border w-fit shrink-0 h-fit flex flex-col gap-[12px] justify-start items-start">
+            <p class="text-[11px]/[normal] box-border text-[#C8FF2E] font-['Geist_Mono',system-ui,sans-serif] font-bold text-left [white-space:nowrap]">
+              {column.heading}
+            </p>
+            {column.links.map((link) => (
+              <a
+                href={link.href}
+                class="u-link-slide text-[15px]/[normal] box-border text-[#D7DDEA] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <div
+    class="[box-sizing:content-box] w-full h-auto 3xl:h-[35.5px] shrink-0 flex flex-col sm:flex-row gap-2 sm:gap-4 3xl:gap-0 p-[22px_0px_0px_0px] justify-between items-start [border-width:1px_0px_0px_0px] [border-style:solid] [border-color:#FFFFFF1F] [margin:-0.5px_0px_0px_0px]"
+  >
+    <p
+      class="text-[11px]/[normal] box-border text-[#7F8A9F] font-['Geist_Mono',system-ui,sans-serif] font-normal text-left 3xl:[white-space:nowrap]"
+    >
+      © 2026 GUBA ESTUDIO LAB. TODOS LOS DERECHOS RESERVADOS.
+    </p>
+    <p
+      class="text-[11px]/[normal] box-border text-[#7F8A9F] font-['Geist_Mono',system-ui,sans-serif] font-normal text-left 3xl:[white-space:nowrap]"
+    >
+      WEB CON ESTRATEGIA, CÓDIGO Y CRITERIO HUMANO.
+    </p>
+  </div>
+</footer>

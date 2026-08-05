@@ -1,0 +1,94 @@
+---
+import Icon from './Icon.astro';
+import { site } from '../config';
+
+// Los tres canales son enlaces reales: sin JS el menú queda desplegado y sigue
+// siendo utilizable. El script solo añade el plegado.
+const channels = [
+  {
+    label: 'WhatsApp',
+    detail: site.phoneLabel,
+    href: site.whatsapp,
+    icon: 'message-circle' as const,
+    external: true,
+  },
+  {
+    // No hay icono de teléfono en el set heredado; este se dibuja aparte.
+    label: 'Llamar',
+    detail: site.phoneLabel,
+    href: site.phone,
+    icon: 'phone' as const,
+    external: false,
+  },
+  {
+    label: 'Correo',
+    detail: 'Escríbenos',
+    href: site.email,
+    icon: 'mail' as const,
+    external: false,
+  },
+];
+---
+
+<div class="dock" data-contact-dock>
+  <ul class="dock__menu" id="contact-dock-menu">
+    {
+      channels.map((channel, i) => (
+        <li class="dock__item" style={`--item-delay:${i * 55}ms`}>
+          <a
+            href={channel.href}
+            target={channel.external ? '_blank' : undefined}
+            rel={channel.external ? 'noopener noreferrer' : undefined}
+            class="dock__link u-icon-host box-border h-fit flex flex-row gap-[10px] p-[10px_16px] justify-start items-center bg-[#0B1020] rounded-[9999px]"
+          >
+            {channel.icon === 'phone' ? (
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#C8FF2E"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+                class="u-icon-pop box-border w-[18px] shrink-0 h-[18px]"
+              >
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            ) : (
+              <Icon
+                name={channel.icon}
+                fill="#C8FF2E"
+                class="u-icon-pop box-border w-[18px] shrink-0 h-[18px]"
+              />
+            )}
+            <span class="box-border flex flex-col gap-[1px] justify-start items-start">
+              <span class="text-[14px]/[normal] text-[#FFFFFF] font-['Funnel_Sans',system-ui,sans-serif] font-bold text-left [white-space:nowrap]">
+                {channel.label}
+              </span>
+              <span class="text-[10px]/[normal] text-[#8E9AB0] font-['Geist_Mono',system-ui,sans-serif] font-normal text-left [white-space:nowrap]">
+                {channel.detail}
+              </span>
+            </span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <button
+    type="button"
+    class="dock__fab box-border w-[58px] h-[58px] flex flex-row justify-center items-center bg-[#C8FF2E] rounded-[9999px]"
+    data-dock-toggle
+    aria-expanded="false"
+    aria-controls="contact-dock-menu"
+    aria-label="Abrir opciones de contacto"
+  >
+    <Icon
+      name="message-circle"
+      fill="#0B1020"
+      class="dock__fab-icon box-border w-[24px] shrink-0 h-[24px]"
+    />
+    <span class="dock__fab-close" aria-hidden="true"></span>
+  </button>
+</div>

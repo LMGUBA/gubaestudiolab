@@ -1,0 +1,60 @@
+@layer theme, base, components, utilities;
+
+/* El diseño original (guba.html) desactiva el preflight de Tailwind, así que
+   importamos solo el tema y las utilidades y aplicamos un reset mínimo. */
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
+
+/* Animaciones e interacciones. Se importa sin `layer()` a propósito para que
+   sus reglas ganen a las utilidades sin usar `!important`. */
+@import './motion.css';
+
+/* `3xl` es el ancho del diseño original: a partir de 1440px la página se
+   muestra exactamente como en guba.html. Por debajo, el layout es fluido. */
+@theme {
+  /* En rem (90rem = 1440px) para que Tailwind lo ordene después de `xl`. */
+  --breakpoint-3xl: 90rem;
+}
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  /* El diseño usa divs sin estilos de agente de usuario; al pasar a etiquetas
+     semánticas quitamos esos estilos para conservar el resultado visual. */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  img,
+  svg {
+    display: block;
+  }
+}

@@ -1,0 +1,197 @@
+---
+import Icon from './Icon.astro';
+
+const webTags = ['Sitios estáticos', 'Webs dinámicas', 'Portales y sistemas'];
+
+const capabilities = [
+  'Sitios estáticos',
+  'Webs dinámicas',
+  'Dashboards',
+  'Automatización aparte',
+  'Soporte continuo',
+];
+---
+
+<section
+  id="servicios"
+  class="box-border w-full h-fit shrink-0 flex flex-col gap-12 sm:gap-16 3xl:gap-[72px] px-5 sm:px-8 lg:px-12 3xl:px-[120px] pt-20 sm:pt-24 lg:pt-32 3xl:pt-[140px] pb-16 sm:pb-20 lg:pb-24 3xl:pb-[110px] justify-start items-start bg-[#FFFFFF]"
+>
+  <div
+    class="box-border w-full h-fit shrink-0 flex flex-col lg:flex-row gap-6 lg:gap-0 justify-between items-start lg:items-end"
+  >
+    <div
+      data-reveal
+      class="box-border w-full lg:w-[63%] 3xl:w-[760px] lg:shrink-0 h-fit flex flex-col gap-[16px] justify-start items-start"
+    >
+      <p
+        class="text-[12px]/[normal] box-border text-[#0062FF] font-['Geist_Mono',system-ui,sans-serif] font-bold tracking-[1px] text-left [white-space:nowrap]"
+      >
+        DESARROLLO WEB
+      </p>
+      <h2
+        class="text-[clamp(32px,4.7vw,64px)]/[1.016] 3xl:text-[64px]/[65px] box-border w-full text-[#151515] font-[Anton,system-ui,sans-serif] font-normal text-left"
+      >
+        UNA WEB CON EL ALCANCE CORRECTO PARA TU NEGOCIO
+      </h2>
+    </div>
+    <p
+      data-reveal
+      style="--reveal-delay:120ms"
+      class="text-[17px]/[26px] sm:text-[19px]/[28px] box-border w-full lg:w-[32%] 3xl:w-[390px] lg:shrink-0 text-[#4B5563] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left"
+    >
+      Primero definimos qué debe lograr tu página. Después elegimos una solución estática o dinámica,
+      sin complejidad innecesaria.
+    </p>
+  </div>
+
+  <div
+    class="box-border w-full h-auto 3xl:h-[690px] shrink-0 flex flex-col lg:flex-row gap-6 3xl:gap-[24px] justify-start items-stretch 3xl:items-start"
+  >
+    <article
+      data-reveal="left"
+      data-spot
+      style="--spot:rgb(0 98 255 / 0.14)"
+      class="u-card u-spot u-icon-host box-border w-full lg:w-[60%] 3xl:w-[720px] lg:shrink-0 h-auto 3xl:h-full flex flex-col gap-8 3xl:gap-0 p-7 sm:p-9 3xl:p-[42px] justify-between items-start bg-[#EEF4FF] rounded-[8px]"
+    >
+      <div class="box-border w-full h-fit shrink-0 flex flex-row gap-4 justify-between items-start">
+        <p
+          class="text-[12px]/[normal] sm:text-[13px]/[normal] box-border text-[#0062FF] font-['Geist_Mono',system-ui,sans-serif] font-bold text-left [white-space:nowrap]"
+        >
+          01 / SERVICIO PRINCIPAL
+        </p>
+        <Icon
+          name="panels-top-left"
+          fill="#0062FF"
+          class="u-icon-pop box-border w-[28px] sm:w-[34px] shrink-0 h-[28px] sm:h-[34px]"
+        />
+      </div>
+      <div class="box-border w-full h-fit shrink-0 flex flex-col gap-[18px] justify-start items-start">
+        <h3
+          class="text-[clamp(30px,4.2vw,56px)]/[1.036] 3xl:text-[56px]/[58px] box-border w-full text-[#151515] font-[Anton,system-ui,sans-serif] font-normal text-left"
+        >
+          SITIOS ESTÁTICOS + WEBS DINÁMICAS
+        </h3>
+        <p
+          class="text-[17px]/[25px] sm:text-[18px]/[26px] box-border w-full 3xl:w-[520px] text-[#4B5563] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left"
+        >
+          Desde páginas informativas rápidas y fáciles de mantener hasta plataformas con usuarios,
+          paneles, formularios, contenido editable o gestión de datos.
+        </p>
+      </div>
+      <ul
+        class="box-border w-fit max-w-full h-fit shrink-0 flex flex-row flex-wrap 3xl:flex-nowrap gap-[10px] justify-start items-start"
+      >
+        {
+          webTags.map((tag) => (
+            <li class="u-tag box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[9px_12px] justify-start items-start [outline:1px_solid_#AFC5F2] [outline-offset:-0.5px] rounded-[9999px]">
+              <span class="text-[13px]/[normal] box-border text-[#151515] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left [white-space:nowrap]">
+                {tag}
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+    </article>
+
+    <div
+      class="box-border w-full lg:[flex:1_1_0] h-auto 3xl:h-full flex flex-col gap-6 3xl:gap-[24px] justify-start items-start"
+    >
+      <article
+        data-reveal="right"
+        data-spot
+        style="--spot:rgb(200 255 46 / 0.18)"
+        class="u-card u-card--onDark u-spot u-icon-host box-border w-full h-auto lg:[flex:1_1_0] flex flex-col gap-6 3xl:gap-0 p-7 sm:p-8 3xl:p-[34px] justify-between items-start bg-[#0B1020] rounded-[8px]"
+      >
+        <div class="box-border w-full h-fit shrink-0 flex flex-row gap-4 justify-between items-start">
+          <p
+            class="text-[12px]/[normal] box-border text-[#C8FF2E] font-['Geist_Mono',system-ui,sans-serif] font-bold text-left [white-space:nowrap]"
+          >
+            02 / SERVICIO APARTE
+          </p>
+          <Icon name="workflow" fill="#C8FF2E" class="u-icon-pop box-border w-[28px] shrink-0 h-[28px]" />
+        </div>
+        <div class="box-border w-full h-fit shrink-0 flex flex-col gap-[12px] justify-start items-start">
+          <h3
+            class="text-[clamp(28px,3vw,40px)]/[1.05] 3xl:text-[40px]/[42px] box-border w-full text-[#FFFFFF] font-[Anton,system-ui,sans-serif] font-normal text-left"
+          >
+            AUTOMATIZACIÓN
+          </h3>
+          <p
+            class="text-[16px]/[23px] box-border w-full text-[#C9D1E3] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left"
+          >
+            Conectamos herramientas y automatizamos tareas repetitivas como un proyecto independiente,
+            con alcance y presupuesto propios.
+          </p>
+        </div>
+      </article>
+
+      <article
+        data-reveal="right"
+        data-spot
+        style="--reveal-delay:120ms;--spot:rgb(255 255 255 / 0.2)"
+        class="u-card u-card--onDark u-spot u-icon-host box-border w-full h-auto lg:[flex:1_1_0] flex flex-col gap-6 3xl:gap-0 p-7 sm:p-8 3xl:p-[34px] justify-between items-start bg-[#0062FF] rounded-[8px]"
+      >
+        <div class="box-border w-full h-fit shrink-0 flex flex-row gap-4 justify-between items-start">
+          <p
+            class="text-[12px]/[normal] box-border text-[#FFFFFF] font-['Geist_Mono',system-ui,sans-serif] font-bold text-left [white-space:nowrap]"
+          >
+            03 / CONTINUIDAD WEB
+          </p>
+          <Icon
+            name="brain-circuit"
+            fill="#FFFFFF"
+            class="u-icon-pop box-border w-[28px] shrink-0 h-[28px]"
+          />
+        </div>
+        <div class="box-border w-full h-fit shrink-0 flex flex-col gap-[12px] justify-start items-start">
+          <h3
+            class="text-[clamp(28px,3vw,40px)]/[1.05] 3xl:text-[40px]/[42px] box-border w-full text-[#FFFFFF] font-[Anton,system-ui,sans-serif] font-normal text-left"
+          >
+            SOPORTE Y EVOLUCIÓN
+          </h3>
+          <p
+            class="text-[16px]/[23px] box-border w-full text-[#FFFFFFD9] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left"
+          >
+            Mantenimiento, nuevas secciones, mejoras de rendimiento y acompañamiento después del
+            lanzamiento.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div
+    data-reveal
+    class="[box-sizing:content-box] w-full h-auto 3xl:h-[70px] shrink-0 flex flex-col sm:flex-row gap-y-3 gap-x-10 p-[24px_0px] justify-start items-start sm:items-center [border-width:1px_0px_1px_0px] [border-style:solid] [border-color:#D9DEE8] [margin:-0.5px_0px_-0.5px_0px]"
+  >
+    <p
+      class="text-[11px]/[normal] box-border shrink-0 text-[#4B5563] font-['Geist_Mono',system-ui,sans-serif] font-bold text-left [white-space:nowrap]"
+    >
+      CAPACIDADES DEL ESTUDIO
+    </p>
+    {/* Cinta continua: el segundo grupo es una copia y se oculta a lectores
+        de pantalla; el desplazamiento se pausa al pasar el cursor. */}
+    <div class="marquee w-full sm:[flex:1_1_0]">
+      <div class="marquee__track">
+        <ul class="marquee__group">
+          {
+            capabilities.map((capability) => (
+              <li class="text-[16px]/[normal] sm:text-[18px]/[normal] box-border text-[#151515] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left [white-space:nowrap]">
+                {capability}
+              </li>
+            ))
+          }
+        </ul>
+        <ul class="marquee__group marquee__group--clone" aria-hidden="true">
+          {
+            capabilities.map((capability) => (
+              <li class="text-[16px]/[normal] sm:text-[18px]/[normal] box-border text-[#151515] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left [white-space:nowrap]">
+                {capability}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

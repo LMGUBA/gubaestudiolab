@@ -1,0 +1,301 @@
+---
+import Icon from './Icon.astro';
+
+// Decoración de píxeles del fondo (posiciones del diseño original, solo 3xl).
+const smallPixels = [
+  [54, 150],
+  [86, 150],
+  [118, 150],
+  [54, 182],
+  [118, 182],
+  [54, 214],
+  [86, 214],
+  [118, 214],
+];
+const largePixels = [
+  [1280, 205],
+  [1316, 205],
+  [1280, 241],
+  [1316, 241],
+  [1244, 277],
+  [1280, 277],
+  [1316, 277],
+];
+
+const workflowNodes = [
+  {
+    number: '01',
+    icon: 'search',
+    title: 'Definir objetivo',
+    source: 'Negocio + audiencia',
+  },
+  {
+    number: '02',
+    icon: 'panels-top-left',
+    title: 'Elegir alcance',
+    source: 'Estática o dinámica',
+  },
+  {
+    number: '03',
+    icon: 'badge-check',
+    title: 'Diseñar experiencia',
+    source: 'Contenido + interfaz',
+  },
+  {
+    number: '04',
+    icon: 'message-circle',
+    title: 'Publicar y medir',
+    source: 'Dominio + analítica',
+  },
+] as const;
+
+const navLinks = [
+  { label: 'Servicios', href: '#servicios' },
+  { label: 'Trabajo', href: '#trabajo' },
+  { label: 'Proceso', href: '#proceso' },
+];
+---
+
+<section
+  id="hero"
+  class="relative w-full bg-[#0062FF] overflow-hidden flex flex-col items-center gap-10 sm:gap-14 px-5 sm:px-8 lg:px-12 pt-8 sm:pt-9 pb-12 sm:pb-16 3xl:block 3xl:h-[1120px] 3xl:px-0 3xl:pt-0 3xl:pb-0"
+>
+  <div aria-hidden="true" class="hero-aurora"></div>
+
+  <div
+    aria-hidden="true"
+    class="hero-parallax absolute inset-0 pointer-events-none hidden 3xl:block"
+    style="--parallax:12px"
+  >
+    {
+      smallPixels.map(([left, top], i) => (
+        <div
+          class="hero-pixel box-border w-[18px] h-[18px] absolute bg-[#FFFFFF24]"
+          style={`left:${left}px;top:${top}px;--pixel-delay:${i * 180}ms`}
+        />
+      ))
+    }
+    {
+      largePixels.map(([left, top], i) => (
+        <div
+          class="hero-pixel box-border w-[22px] h-[22px] absolute bg-[#FFFFFF24]"
+          style={`left:${left}px;top:${top}px;--pixel-delay:${i * 210 + 90}ms`}
+        />
+      ))
+    }
+  </div>
+
+  <div
+    aria-hidden="true"
+    class="hero-parallax box-border absolute left-[1160px] top-[470px] [z-index:15] hidden 3xl:block pointer-events-none"
+    style="--parallax:-22px"
+  >
+    <div
+      class="hero-plus text-[164px]/[normal] text-[#FFFFFF18] font-['Geist_Mono',system-ui,sans-serif] font-bold text-left [white-space:nowrap]"
+    >
+      +
+    </div>
+  </div>
+
+  <header
+    class="box-border w-full h-fit flex flex-row flex-wrap gap-x-6 gap-y-5 justify-between items-center 3xl:absolute 3xl:left-[72px] 3xl:top-[36px] 3xl:w-[1296px] 3xl:h-[64px] 3xl:flex-nowrap 3xl:gap-x-0 3xl:gap-y-0 3xl:[z-index:16]"
+  >
+    <a
+      href="#hero"
+      class="u-icon-host box-border w-fit shrink-0 h-fit flex flex-row gap-[10px] justify-start items-center"
+    >
+      <div class="u-icon-pop box-border w-[13px] sm:w-[16px] shrink-0 h-[26px] sm:h-[32px] bg-[#C8FF2E]"></div>
+      <span
+        class="text-[22px]/[normal] sm:text-[28px]/[normal] box-border text-[#FFFFFF] font-[Anton,system-ui,sans-serif] font-normal tracking-[0.5px] text-left [white-space:nowrap]"
+      >
+        GUBA ESTUDIO LAB
+      </span>
+    </a>
+    <div class="contents md:flex md:flex-row md:w-fit md:shrink-0 md:h-fit md:gap-[34px] md:justify-start md:items-center">
+      <nav
+        class="order-3 w-full md:order-none md:w-fit box-border h-fit flex flex-row gap-6 md:gap-[34px] justify-center md:justify-start items-center"
+      >
+        {
+          navLinks.map((link) => (
+            <a
+              href={link.href}
+              class="u-link text-[14px]/[normal] sm:text-[15px]/[normal] box-border text-[#FFFFFFD9] font-['Funnel_Sans',system-ui,sans-serif] font-semibold text-left [white-space:nowrap]"
+            >
+              {link.label}
+            </a>
+          ))
+        }
+      </nav>
+      <a
+        href="#contacto"
+        class="u-btn u-btn--ink u-sheen box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[10px_18px] sm:p-[12px_20px] justify-start items-center bg-[#0B1020] rounded-[9999px]"
+      >
+        <span
+          class="text-[14px]/[normal] sm:text-[15px]/[normal] box-border text-[#FFFFFF] font-['Funnel_Sans',system-ui,sans-serif] font-bold text-left [white-space:nowrap]"
+        >
+          Hablemos
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <div
+    class="box-border w-full lg:w-[900px] h-fit flex flex-col gap-5 sm:gap-[24px] justify-start items-center 3xl:absolute 3xl:left-[170px] 3xl:top-[180px] 3xl:w-[1100px] 3xl:[z-index:17]"
+  >
+    <div
+      data-reveal
+      class="box-border w-fit max-w-full h-fit shrink-0 flex flex-row gap-[10px] p-[8px_14px] justify-center items-center bg-[#FFFFFF1A] [outline:1px_solid_#FFFFFF4D] [outline-offset:-0.5px] rounded-[9999px]"
+    >
+      <div class="u-pulse box-border w-[8px] shrink-0 h-[8px] bg-[#C8FF2E] rounded-full"></div>
+      <span
+        class="text-[10px]/[normal] sm:text-[12px]/[normal] box-border text-[#FFFFFF] font-['Geist_Mono',system-ui,sans-serif] font-semibold text-center 3xl:text-left 3xl:[white-space:nowrap]"
+      >
+        ESTUDIO WEB · PROYECTOS DISPONIBLES
+      </span>
+    </div>
+    <h1
+      data-reveal
+      style="--reveal-delay:110ms"
+      class="text-[clamp(38px,6.2vw,84px)]/[0.976] 3xl:text-[84px]/[82px] box-border w-full text-[#FFFFFF] font-[Anton,system-ui,sans-serif] font-normal tracking-[-0.5px] sm:tracking-[-1.2px] text-center"
+    >
+      PÁGINAS WEB QUE EXPLICAN, CONECTAN Y CRECEN CONTIGO
+    </h1>
+    <p
+      data-reveal
+      style="--reveal-delay:210ms"
+      class="text-[17px]/[25px] sm:text-[21px]/[29px] box-border w-full lg:w-[720px] text-[#FFFFFFE6] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-center"
+    >
+      Diseñamos y desarrollamos sitios web estáticos para comunicar con claridad, y plataformas
+      dinámicas para operar, publicar y escalar.
+    </p>
+    <div
+      data-reveal
+      style="--reveal-delay:310ms"
+      class="box-border w-full sm:w-fit h-fit shrink-0 flex flex-col sm:flex-row gap-3 sm:gap-[14px] justify-start items-stretch sm:items-center"
+    >
+      <a
+        href="#contacto"
+        class="u-btn u-btn--lime u-sheen box-border w-full sm:w-fit sm:shrink-0 h-fit flex flex-row gap-[10px] p-[15px_24px] sm:p-[16px_24px] justify-center sm:justify-start items-center bg-[#C8FF2E] rounded-[9999px]"
+      >
+        <span
+          class="text-[16px]/[normal] box-border text-[#0B1020] font-['Funnel_Sans',system-ui,sans-serif] font-extrabold text-left [white-space:nowrap]"
+        >
+          Cotizar mi página web
+        </span>
+        <Icon
+          name="arrow-up-right"
+          fill="#0B1020"
+          class="u-arrow box-border w-[18px] shrink-0 h-[18px]"
+        />
+      </a>
+      <a
+        href="#trabajo"
+        class="u-btn u-btn--ghost box-border w-full sm:w-fit sm:shrink-0 h-fit flex flex-row gap-[10px] p-[15px_24px] sm:p-[16px_24px] justify-center sm:justify-start items-center [outline:1px_solid_#FFFFFF80] [outline-offset:-0.5px] rounded-[9999px]"
+      >
+        <span
+          class="text-[16px]/[normal] box-border text-[#FFFFFF] font-['Funnel_Sans',system-ui,sans-serif] font-bold text-left [white-space:nowrap]"
+        >
+          Ver proyectos web
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <div
+    data-reveal
+    style="--reveal-delay:420ms;--reveal-y:40px"
+    class="box-border w-full h-auto [box-shadow:0px_8px_8px_0px_#001B4D66] flex flex-col xl:flex-row gap-0 justify-start items-stretch bg-[#FFFFFF] rounded-[8px] overflow-hidden 3xl:absolute 3xl:left-[120px] 3xl:top-[735px] 3xl:w-[1200px] 3xl:h-[330px] 3xl:items-start 3xl:[z-index:18]"
+  >
+    <div
+      class="box-border w-full xl:w-[760px] xl:shrink-0 h-auto xl:h-full flex flex-col gap-5 sm:gap-[20px] p-6 sm:p-[30px] justify-start items-start bg-[#0B1020]"
+    >
+      <div
+        class="box-border w-full h-fit shrink-0 flex flex-row flex-wrap gap-x-4 gap-y-2 justify-between items-center"
+      >
+        <h2
+          class="text-[12px]/[normal] sm:text-[13px]/[normal] box-border text-[#FFFFFF] font-['Geist_Mono',system-ui,sans-serif] font-bold text-left 3xl:[white-space:nowrap]"
+        >
+          DOS FORMAS DE CONSTRUIR TU PRESENCIA DIGITAL
+        </h2>
+        <div class="box-border w-fit shrink-0 h-fit flex flex-row gap-[7px] justify-start items-center">
+          <div class="box-border w-[8px] shrink-0 h-[8px] bg-[#C8FF2E] rounded-full"></div>
+          <span
+            class="text-[11px]/[normal] box-border text-[#C8FF2E] font-['Geist_Mono',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+          >
+            WEB
+          </span>
+        </div>
+      </div>
+      <ul
+        class="box-border w-full h-fit shrink-0 grid grid-cols-2 md:grid-cols-4 gap-3 3xl:flex 3xl:flex-row 3xl:gap-[12px] justify-start items-stretch 3xl:items-center"
+      >
+        {
+          workflowNodes.map((node) => (
+            <li
+              data-spot
+              style="--spot:rgb(200 255 46 / 0.16)"
+              class="u-card u-card--onDark u-spot u-icon-host box-border w-full h-auto min-h-[136px] 3xl:h-[156px] 3xl:[flex:1_1_0] flex flex-col gap-3 3xl:gap-0 p-[14px] sm:p-[16px] justify-between items-start bg-[#141B2E] [outline:1px_solid_#FFFFFF1F] [outline-offset:-0.5px] rounded-[8px]"
+            >
+              <div class="box-border w-full h-fit shrink-0 flex flex-row gap-0 justify-between items-center">
+                <span class="text-[11px]/[normal] box-border text-[#FFFFFF73] font-['Geist_Mono',system-ui,sans-serif] font-normal text-left [white-space:nowrap]">
+                  {node.number}
+                </span>
+                <Icon
+                  name={node.icon}
+                  fill="#C8FF2E"
+                  class="u-icon-pop box-border w-[20px] shrink-0 h-[20px]"
+                />
+              </div>
+              <div class="box-border w-full 3xl:w-fit h-fit shrink-0 flex flex-col gap-[5px] justify-start items-start">
+                <span class="text-[14px]/[normal] sm:text-[15px]/[normal] box-border text-[#FFFFFF] font-['Funnel_Sans',system-ui,sans-serif] font-bold text-left 3xl:[white-space:nowrap]">
+                  {node.title}
+                </span>
+                <span class="text-[11px]/[normal] box-border text-[#A8B2C7] font-['Geist_Mono',system-ui,sans-serif] font-normal text-left 3xl:[white-space:nowrap]">
+                  {node.source}
+                </span>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div
+      class="u-arrow-host box-border w-full xl:[flex:1_1_0] h-auto xl:h-full flex flex-col gap-6 3xl:gap-0 p-6 sm:p-[34px] justify-between items-start bg-[#FFFFFF]"
+    >
+      <div
+        class="box-border w-fit h-fit shrink-0 flex flex-row gap-0 p-[7px_10px] justify-start items-start bg-[#EEF4FF] rounded-[4px]"
+      >
+        <span
+          class="text-[11px]/[normal] box-border text-[#0062FF] font-['Geist_Mono',system-ui,sans-serif] font-bold text-left [white-space:nowrap]"
+        >
+          ELECCIÓN CLARA
+        </span>
+      </div>
+      <div class="box-border w-full h-fit shrink-0 flex flex-col gap-[8px] justify-start items-start">
+        <p
+          class="text-[clamp(44px,4.8vw,68px)]/[1] 3xl:text-[68px]/[68px] box-border text-[#151515] font-[Anton,system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+        >
+          2 RUTAS
+        </p>
+        <p
+          class="text-[17px]/[24px] sm:text-[19px]/[26px] box-border w-full text-[#151515] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left"
+        >
+          Sitio estático para velocidad y claridad. Web dinámica para gestión, cuentas, datos y
+          procesos.
+        </p>
+      </div>
+      <div class="box-border w-full h-fit shrink-0 flex flex-row gap-4 justify-between items-center">
+        <span
+          class="text-[11px]/[normal] box-border text-[#4B5563] font-['Geist_Mono',system-ui,sans-serif] font-normal text-left [white-space:nowrap]"
+        >
+          ESTÁTICA / DINÁMICA
+        </span>
+        <Icon
+          name="move-right"
+          fill="#0062FF"
+          class="u-arrow--right box-border w-[22px] shrink-0 h-[22px]"
+        />
+      </div>
+    </div>
+  </div>
+</section>

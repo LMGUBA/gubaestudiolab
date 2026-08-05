@@ -1,0 +1,695 @@
+/* Sistema de movimiento del sitio.
+   Va fuera de @layer a propósito: así estas reglas ganan a las utilidades de
+   Tailwind sin necesidad de `!important`. Todo lo de aquí es decorativo y se
+   desactiva con `prefers-reduced-motion`. */
+
+:root {
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 180ms;
+  --dur: 320ms;
+  --dur-slow: 620ms;
+  --lime: #c8ff2e;
+  --blue: #0062ff;
+  --ink: #0b1020;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Compensa la barra fija al saltar con anclas. */
+[id] {
+  scroll-margin-top: 96px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---------------------------------------------------------------- reveal --
+   El contenido es visible por defecto; solo se oculta cuando hay JS (clase
+   `js` en <html>), de modo que sin JS la página se ve completa. */
+.js [data-reveal] {
+  transition:
+    opacity var(--dur-slow) var(--ease-out),
+    transform var(--dur-slow) var(--ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+/* El estado oculto solo existe mientras falta `.is-in`. Así, una vez revelado
+   el elemento no arrastra ningún `transform` que pise a los hovers. El JS
+   además retira el atributo al terminar la transición. */
+.js [data-reveal]:not(.is-in) {
+  opacity: 0;
+  transform: translate3d(0, var(--reveal-y, 26px), 0);
+}
+
+/* Variantes de entrada. */
+.js [data-reveal='left']:not(.is-in) {
+  transform: translate3d(-28px, 0, 0);
+}
+
+.js [data-reveal='right']:not(.is-in) {
+  transform: translate3d(28px, 0, 0);
+}
+
+.js [data-reveal='zoom']:not(.is-in) {
+  transform: scale(0.96);
+}
+
+/* --------------------------------------------------------------- botones -- */
+.u-btn {
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform var(--dur) var(--ease-out),
+    box-shadow var(--dur) var(--ease-out),
+    background-color var(--dur) var(--ease-out),
+    outline-color var(--dur) var(--ease-out);
+}
+
+.u-btn:hover {
+  transform: translateY(-3px);
+}
+
+.u-btn:active {
+  transform: translateY(-1px) scale(0.985);
+  transition-duration: var(--dur-fast);
+}
+
+.u-btn--lime:hover {
+  box-shadow: 0 14px 30px -10px rgb(200 255 46 / 0.75);
+}
+
+.u-btn--ink:hover {
+  box-shadow: 0 14px 30px -12px rgb(0 0 0 / 0.65);
+}
+
+/* Botón fantasma: se rellena al pasar el cursor. */
+.u-btn--ghost:hover {
+  background-color: rgb(255 255 255 / 0.14);
+  outline-color: #ffffff !important;
+}
+
+/* Destello diagonal que cruza el botón. */
+.u-sheen::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 38%,
+    rgb(255 255 255 / 0.5) 50%,
+    transparent 62%
+  );
+  transform: translateX(-130%);
+  pointer-events: none;
+}
+
+.u-sheen:hover::after {
+  transform: translateX(130%);
+  transition: transform 750ms var(--ease-out);
+}
+
+/* Iconos que acompañan al botón. */
+.u-arrow {
+  transition: transform var(--dur) var(--ease-out);
+}
+
+.u-btn:hover .u-arrow,
+.u-arrow-host:hover .u-arrow {
+  transform: translate(4px, -4px);
+}
+
+.u-arrow--right {
+  transition: transform var(--dur) var(--ease-out);
+}
+
+.u-arrow-host:hover .u-arrow--right {
+  transform: translateX(6px);
+}
+
+.u-icon-pop {
+  transition: transform var(--dur) var(--ease-out);
+}
+
+.u-icon-host:hover .u-icon-pop {
+  transform: scale(1.15) rotate(-6deg);
+}
+
+/* ------------------------------------------------------------- enlaces --- */
+.u-link {
+  position: relative;
+  transition: color var(--dur) var(--ease-out);
+}
+
+.u-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 2px;
+  background: var(--lime);
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform var(--dur) var(--ease-out);
+}
+
+.u-link:hover::after,
+.u-link.is-active::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+.u-link:hover {
+  color: #ffffff;
+}
+
+/* Enlaces del pie: se desplazan un poco. */
+.u-link-slide {
+  transition:
+    color var(--dur) var(--ease-out),
+    transform var(--dur) var(--ease-out);
+}
+
+.u-link-slide:hover {
+  color: var(--lime);
+  transform: translateX(4px);
+}
+
+/* -------------------------------------------------------------- tarjetas -- */
+.u-card {
+  position: relative;
+  isolation: isolate;
+  transition:
+    transform var(--dur) var(--ease-out),
+    box-shadow var(--dur) var(--ease-out),
+    outline-color var(--dur) var(--ease-out);
+}
+
+.u-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 26px 50px -26px rgb(11 16 32 / 0.55);
+}
+
+.u-card--onDark:hover {
+  box-shadow: 0 26px 55px -22px rgb(0 0 0 / 0.7);
+  outline-color: rgb(200 255 46 / 0.45) !important;
+}
+
+/* Foco de luz que sigue al cursor (las coordenadas las escribe el JS). */
+.u-spot::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: radial-gradient(
+    320px circle at var(--mx, 50%) var(--my, 0%),
+    var(--spot, rgb(255 255 255 / 0.16)),
+    transparent 68%
+  );
+  opacity: 0;
+  transition: opacity var(--dur) var(--ease-out);
+  pointer-events: none;
+}
+
+.u-spot:hover::before {
+  opacity: 1;
+}
+
+/* Fila del proceso: se tiñe y levanta el número. */
+.u-step {
+  transition: background-color var(--dur) var(--ease-out);
+}
+
+.u-step:hover {
+  background-color: #f5f8ff;
+}
+
+.u-step .u-step__num {
+  display: inline-block;
+  transition: transform var(--dur) var(--ease-out);
+}
+
+.u-step:hover .u-step__num {
+  transform: scale(1.35);
+}
+
+.u-outcome {
+  transition:
+    transform var(--dur) var(--ease-out),
+    color var(--dur) var(--ease-out);
+}
+
+.u-outcome:hover {
+  transform: translateX(8px);
+}
+
+.u-tag {
+  transition:
+    background-color var(--dur) var(--ease-out),
+    outline-color var(--dur) var(--ease-out),
+    transform var(--dur) var(--ease-out);
+}
+
+.u-tag:hover {
+  background-color: #ffffff;
+  outline-color: var(--blue) !important;
+  transform: translateY(-2px);
+}
+
+.u-logo {
+  transition:
+    transform var(--dur-slow) var(--ease-out),
+    filter var(--dur) var(--ease-out);
+}
+
+.u-card:hover .u-logo {
+  transform: scale(1.05);
+}
+
+/* ------------------------------------------------------- decoración hero -- */
+.hero-aurora {
+  position: absolute;
+  inset: -25% -15%;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(38% 34% at 16% 24%, rgb(200 255 46 / 0.24), transparent 62%),
+    radial-gradient(34% 32% at 84% 14%, rgb(255 255 255 / 0.2), transparent 64%),
+    radial-gradient(46% 42% at 62% 88%, rgb(0 18 82 / 0.55), transparent 66%);
+  filter: blur(14px);
+  animation: aurora 22s var(--ease-soft) infinite alternate;
+}
+
+@keyframes aurora {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(2.5%, -2%, 0) scale(1.08);
+  }
+  100% {
+    transform: translate3d(-2.5%, 2.5%, 0) scale(1.04);
+  }
+}
+
+.hero-pixel {
+  animation: twinkle 4.6s var(--ease-soft) infinite;
+  animation-delay: var(--pixel-delay, 0ms);
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.22);
+  }
+}
+
+/* Giro muy lento: decoración de fondo, no debe robar atención. */
+.hero-plus {
+  animation: float-spin 28s linear infinite;
+}
+
+@keyframes float-spin {
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+  50% {
+    transform: rotate(180deg) translateY(-14px);
+  }
+  100% {
+    transform: rotate(360deg) translateY(0);
+  }
+}
+
+/* Paralaje suave: el JS escribe --px / --py entre -1 y 1. */
+.hero-parallax {
+  transition: transform 400ms var(--ease-out);
+  transform: translate3d(
+    calc(var(--px, 0) * var(--parallax, 14px)),
+    calc(var(--py, 0) * var(--parallax, 14px)),
+    0
+  );
+}
+
+/* Punto vivo del badge. */
+.u-pulse {
+  position: relative;
+}
+
+.u-pulse::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: inherit;
+  animation: ping 2.4s var(--ease-out) infinite;
+}
+
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.65;
+  }
+  70%,
+  100% {
+    transform: scale(2.8);
+    opacity: 0;
+  }
+}
+
+/* ---------------------------------------------------------------- barra --- */
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 90;
+  transform: translate3d(0, -110%, 0);
+  transition: transform 420ms var(--ease-out);
+  background: rgb(11 16 32 / 0.82);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border-bottom: 1px solid rgb(255 255 255 / 0.1);
+}
+
+.sticky-nav.is-shown {
+  transform: none;
+}
+
+.sticky-nav__progress {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  width: 100%;
+  background: var(--lime);
+  box-shadow: 0 0 12px rgb(200 255 46 / 0.6);
+  transform: scaleX(var(--progress, 0));
+  transform-origin: left center;
+}
+
+/* ---------------------------------------------------------- volver arriba -- */
+/* Abajo a la izquierda para no chocar con el dock de contacto. */
+.to-top {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 95;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(0, 16px, 0) scale(0.85);
+  box-shadow: 0 12px 26px -10px rgb(11 16 32 / 0.5);
+  /* La visibilidad espera a que termine el desvanecido para no cortarlo. */
+  transition:
+    opacity var(--dur) var(--ease-out),
+    transform var(--dur) var(--ease-out),
+    box-shadow var(--dur) var(--ease-out),
+    visibility 0s linear var(--dur);
+}
+
+.to-top.is-shown {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition-delay: 0s;
+}
+
+.to-top.is-shown:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -10px rgb(200 255 46 / 0.7);
+}
+
+.to-top.is-shown:active {
+  transform: translateY(-1px) scale(0.95);
+  transition-duration: var(--dur-fast);
+}
+
+/* No hay icono de flecha hacia arriba: giramos la de la derecha. */
+.to-top__icon {
+  transform: rotate(-90deg);
+}
+
+@media (min-width: 640px) {
+  .to-top {
+    left: 28px;
+    bottom: 28px;
+  }
+}
+
+/* ------------------------------------------------------ dock de contacto -- */
+.dock {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 96;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.dock__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+/* Estado plegado: solo cuando hay JS, para que sin él quede todo a la vista. */
+.js .dock:not(.is-open) .dock__item {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(0, 14px, 0) scale(0.9);
+  transition:
+    opacity var(--dur-fast) var(--ease-out),
+    transform var(--dur-fast) var(--ease-out),
+    visibility 0s linear var(--dur-fast);
+}
+
+.js .dock__item {
+  transform-origin: right center;
+  transition:
+    opacity var(--dur) var(--ease-out) var(--item-delay, 0ms),
+    transform var(--dur) var(--ease-out) var(--item-delay, 0ms);
+}
+
+.dock__link {
+  box-shadow: 0 14px 30px -12px rgb(0 0 0 / 0.7);
+  transition:
+    transform var(--dur) var(--ease-out),
+    background-color var(--dur) var(--ease-out);
+}
+
+.dock__link:hover {
+  transform: translateX(-4px);
+  background-color: #141b2e;
+}
+
+.dock__fab {
+  position: relative;
+  box-shadow: 0 14px 30px -10px rgb(200 255 46 / 0.6);
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  transition:
+    transform var(--dur) var(--ease-out),
+    box-shadow var(--dur) var(--ease-out),
+    background-color var(--dur) var(--ease-out);
+}
+
+.dock__fab:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 36px -10px rgb(200 255 46 / 0.8);
+}
+
+.dock__fab:active {
+  transform: translateY(-1px) scale(0.95);
+  transition-duration: var(--dur-fast);
+}
+
+.dock.is-open .dock__fab {
+  background-color: #0b1020;
+}
+
+.dock__fab-icon {
+  transition:
+    opacity var(--dur-fast) var(--ease-out),
+    transform var(--dur) var(--ease-out);
+}
+
+.dock.is-open .dock__fab-icon {
+  opacity: 0;
+  transform: rotate(45deg) scale(0.6);
+}
+
+/* Aspa dibujada con dos barras: el set de iconos no trae una. */
+.dock__fab-close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transform: rotate(-45deg) scale(0.6);
+  transition:
+    opacity var(--dur-fast) var(--ease-out),
+    transform var(--dur) var(--ease-out);
+}
+
+.dock__fab-close::before,
+.dock__fab-close::after {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 1px;
+  width: 18px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--lime);
+}
+
+.dock__fab-close::before {
+  transform: rotate(45deg);
+}
+
+.dock__fab-close::after {
+  transform: rotate(-45deg);
+}
+
+.dock.is-open .dock__fab-close {
+  opacity: 1;
+  transform: none;
+}
+
+@media (min-width: 640px) {
+  .dock {
+    right: 28px;
+    bottom: 28px;
+  }
+}
+
+/* -------------------------------------------------------------- marquee --- */
+.marquee {
+  overflow: hidden;
+  min-width: 0;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee:hover .marquee__track {
+  animation-play-state: paused;
+}
+
+.marquee__group {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+  padding-right: 44px;
+}
+
+@keyframes marquee {
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* ------------------------------------------------ movimiento reducido ---- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .js [data-reveal],
+  .js [data-reveal]:not(.is-in) {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .hero-aurora,
+  .hero-pixel,
+  .hero-plus,
+  .u-pulse::after,
+  .marquee__track {
+    animation: none;
+  }
+
+  .hero-parallax {
+    transform: none;
+  }
+
+  /* Sin animación la cinta pasa a ser una lista que fluye: hay que soltar el
+     `width: max-content` del carril o desbordaría la página en pantallas
+     estrechas. */
+  .marquee {
+    overflow: visible;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .marquee__track {
+    width: auto;
+    flex-wrap: wrap;
+  }
+
+  .marquee__group {
+    flex-wrap: wrap;
+    gap: 12px 28px;
+    padding-right: 0;
+  }
+
+  .marquee__group--clone {
+    display: none;
+  }
+
+  .u-btn:hover,
+  .u-card:hover,
+  .u-outcome:hover,
+  .u-link-slide:hover,
+  .to-top.is-shown:hover,
+  .dock__link:hover,
+  .dock__fab:hover {
+    transform: none;
+  }
+
+  /* El dock sigue plegándose, pero sin desplazamientos ni giros. */
+  .js .dock:not(.is-open) .dock__item,
+  .js .dock__item,
+  .dock.is-open .dock__fab-icon,
+  .dock__fab-close {
+    transform: none;
+  }
+
+  .js .dock__item,
+  .dock__fab-icon,
+  .dock__fab-close {
+    transition: opacity 1ms linear;
+  }
+
+  .js .dock:not(.is-open) .dock__item {
+    transition:
+      opacity 1ms linear,
+      visibility 0s linear 1ms;
+  }
+
+  .u-sheen::after {
+    display: none;
+  }
+}

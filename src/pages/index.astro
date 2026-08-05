@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import ClientProof from '../components/ClientProof.astro';
+import Process from '../components/Process.astro';
+import FinalCta from '../components/FinalCta.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import StickyNav from '../components/StickyNav.astro';
+import BackToTop from '../components/BackToTop.astro';
+import ContactDock from '../components/ContactDock.astro';
+---
+
+<Layout title="GUBA ESTUDIO LAB — Páginas web estáticas y dinámicas">
+  <StickyNav />
+  <BackToTop />
+  <ContactDock />
+  <div
+    class="box-border w-full max-w-[1440px] mx-auto h-fit flex flex-col gap-0 justify-start items-start bg-[#FFFFFF] overflow-hidden"
+  >
+    <Hero />
+    <Services />
+    <ClientProof />
+    <Process />
+    <FinalCta />
+    <SiteFooter />
+  </div>
+</Layout>

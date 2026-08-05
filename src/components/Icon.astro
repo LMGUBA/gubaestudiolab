@@ -1,0 +1,22 @@
+---
+import { iconPaths, type IconName } from './icon-paths';
+
+interface Props {
+  name: IconName;
+  fill: string;
+  class?: string;
+}
+
+const { name, fill, class: className } = Astro.props;
+---
+
+<svg
+  viewBox="0 0 13.99993896484375 14"
+  preserveAspectRatio="xMidYMid meet"
+  xmlns="http://www.w3.org/2000/svg"
+  class={className}
+  aria-hidden="true"
+  focusable="false"
+>
+  <path d={iconPaths[name]} fill={fill}></path>
+</svg>

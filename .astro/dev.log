@@ -1,0 +1,632 @@
+{"message":"connected.","label":"vite","level":"info"}
+{"message":"Generated 0ms","label":"types","level":"info"}
+{"message":"connected.","label":"vite","level":"info"}
+{"message":" astro  v7.1.6 ready in 639 ms\n┃ Local    http://localhost:4321/\n┃ Network  use --host to expose","label":"SKIP_FORMAT","level":"info"}
+{"message":"watching for file changes...","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] / 5ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"program reload","label":"vite","level":"info"}
+{"message":"public/_original.html","label":"watch","level":"info"}
+{"message":"An error happened during full reload\nFailed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?\nError: Failed to load url astro:server-app.js (resolved id: astro:server-app.js). Does the file exist?\n    at loadAndTransform (file:///Users/luismiguelguerebalvin/Desktop/programas/GUBA%20ESTUDIO%20LAB/node_modules/vite/dist/node/chunks/node.js:20583:31)","label":"vite","level":"error"}
+{"message":"[200] / 6ms","label":null,"level":"info"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"[200] / 1ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 24ms","label":null,"level":"info"}
+{"message":"[200] / 24ms","label":null,"level":"info"}
+{"message":"[200] / 24ms","label":null,"level":"info"}
+{"message":"[200] / 24ms","label":null,"level":"info"}
+{"message":"[200] / 5ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 10ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 22ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 1ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 21ms","label":null,"level":"info"}
+{"message":"[200] / 21ms","label":null,"level":"info"}
+{"message":"[200] / 21ms","label":null,"level":"info"}
+{"message":"[200] / 21ms","label":null,"level":"info"}
+{"message":"[console.error] Astro Error while running audit's match function: TypeError: Failed to fetch","label":"vite","level":"error"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 10ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 5ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 7ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 28ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 5ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 6ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 1ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 20ms","label":null,"level":"info"}
+{"message":"[200] / 20ms","label":null,"level":"info"}
+{"message":"[200] / 20ms","label":null,"level":"info"}
+{"message":"[200] / 20ms","label":null,"level":"info"}
+{"message":"[200] / 7ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 6ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 7ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"src/scripts/motion.ts","label":"watch","level":"info"}
+{"message":"[200] / 5ms","label":null,"level":"info"}
+{"message":"[200] / 5ms","label":null,"level":"info"}
+{"message":"[200] / 5ms","label":null,"level":"info"}
+{"message":"[200] / 5ms","label":null,"level":"info"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 10ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 17ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 5ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 24ms","label":null,"level":"info"}
+{"message":"[200] / 24ms","label":null,"level":"info"}
+{"message":"[200] / 24ms","label":null,"level":"info"}
+{"message":"[200] / 24ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 10ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 9ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 6ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 7ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 18ms","label":null,"level":"info"}
+{"message":"[200] / 18ms","label":null,"level":"info"}
+{"message":"[200] / 18ms","label":null,"level":"info"}
+{"message":"[200] / 18ms","label":null,"level":"info"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 5ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 5ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 5ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 6ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 1ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 6ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"[200] / 1ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 9ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 10ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 39ms","label":null,"level":"info"}
+{"message":"[200] / 39ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 19ms","label":null,"level":"info"}
+{"message":"[200] / 19ms","label":null,"level":"info"}
+{"message":"[200] / 19ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 17ms","label":null,"level":"info"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 17ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"[200] / 9ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 1ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 17ms","label":null,"level":"info"}
+{"message":"[200] / 17ms","label":null,"level":"info"}
+{"message":"[200] / 17ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 1ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 7ms","label":null,"level":"info"}
+{"message":"src/scripts/motion.ts","label":"watch","level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 11ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] / 6ms","label":null,"level":"info"}
+{"message":"[200] / 7ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] / 5ms","label":null,"level":"info"}
+{"message":"[200] / 5ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 23ms","label":null,"level":"info"}
+{"message":"[200] / 23ms","label":null,"level":"info"}
+{"message":"[200] / 23ms","label":null,"level":"info"}
+{"message":"[200] / 45ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 14ms","label":null,"level":"info"}
+{"message":"[200] / 5ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at /Users/luismiguelguerebalvin/Desktop/programas/GUBA ESTUDIO LAB/src/components/ClientProof.astro:123:6\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at /Users/luismiguelguerebalvin/Desktop/programas/GUBA ESTUDIO LAB/src/components/ClientProof.astro:123:6\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at handleCompileResultErrors (file:///Users/luismiguelguerebalvin/Desktop/programas/GUBA%20ESTUDIO%20LAB/node_modules/astro/dist/core/compile/compile.js:67:11)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at /Users/luismiguelguerebalvin/Desktop/programas/GUBA ESTUDIO LAB/src/components/ClientProof.astro:123:6\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at handleCompileResultErrors (file:///Users/luismiguelguerebalvin/Desktop/programas/GUBA%20ESTUDIO%20LAB/node_modules/astro/dist/core/compile/compile.js:67:11)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at /Users/luismiguelguerebalvin/Desktop/programas/GUBA ESTUDIO LAB/src/components/ClientProof.astro:130:6\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at handleCompileResultErrors (file:///Users/luismiguelguerebalvin/Desktop/programas/GUBA%20ESTUDIO%20LAB/node_modules/astro/dist/core/compile/compile.js:67:11)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at /Users/luismiguelguerebalvin/Desktop/programas/GUBA ESTUDIO LAB/src/components/ClientProof.astro:130:6\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at handleCompileResultErrors (file:///Users/luismiguelguerebalvin/Desktop/programas/GUBA%20ESTUDIO%20LAB/node_modules/astro/dist/core/compile/compile.js:67:11)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at /Users/luismiguelguerebalvin/Desktop/programas/GUBA ESTUDIO LAB/src/components/ClientProof.astro:130:6\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at handleCompileResultErrors (file:///Users/luismiguelguerebalvin/Desktop/programas/GUBA%20ESTUDIO%20LAB/node_modules/astro/dist/core/compile/compile.js:67:11)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 17ms","label":null,"level":"info"}
+{"message":"[200] / 17ms","label":null,"level":"info"}
+{"message":"[200] / 17ms","label":null,"level":"info"}
+{"message":"[200] / 17ms","label":null,"level":"info"}
+{"message":"[200] / 17ms","label":null,"level":"info"}
+{"message":"[200] / 10ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 56ms","label":null,"level":"info"}
+{"message":"[200] / 109ms","label":null,"level":"info"}
+{"message":"[200] / 37ms","label":null,"level":"info"}
+{"message":"[200] / 6ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at /Users/luismiguelguerebalvin/Desktop/programas/GUBA ESTUDIO LAB/src/components/ClientProof.astro:82:6\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at handleCompileResultErrors (file:///Users/luismiguelguerebalvin/Desktop/programas/GUBA%20ESTUDIO%20LAB/node_modules/astro/dist/core/compile/compile.js:67:11)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at /Users/luismiguelguerebalvin/Desktop/programas/GUBA ESTUDIO LAB/src/components/ClientProof.astro:82:6\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at handleCompileResultErrors (file:///Users/luismiguelguerebalvin/Desktop/programas/GUBA%20ESTUDIO%20LAB/node_modules/astro/dist/core/compile/compile.js:67:11)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at /Users/luismiguelguerebalvin/Desktop/programas/GUBA ESTUDIO LAB/src/components/ClientProof.astro:82:6\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at handleCompileResultErrors (file:///Users/luismiguelguerebalvin/Desktop/programas/GUBA%20ESTUDIO%20LAB/node_modules/astro/dist/core/compile/compile.js:67:11)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at /Users/luismiguelguerebalvin/Desktop/programas/GUBA ESTUDIO LAB/src/components/ClientProof.astro:89:6\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at handleCompileResultErrors (file:///Users/luismiguelguerebalvin/Desktop/programas/GUBA%20ESTUDIO%20LAB/node_modules/astro/dist/core/compile/compile.js:67:11)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at /Users/luismiguelguerebalvin/Desktop/programas/GUBA ESTUDIO LAB/src/components/ClientProof.astro:89:6\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at handleCompileResultErrors (file:///Users/luismiguelguerebalvin/Desktop/programas/GUBA%20ESTUDIO%20LAB/node_modules/astro/dist/core/compile/compile.js:67:11)\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"[CompilerError] Closing tag '</article>' has no matching opening tag.\n  Stack trace:\n    at /Users/luismiguelguerebalvin/Desktop/programas/GUBA ESTUDIO LAB/src/components/ClientProof.astro:89:6\n    [...] See full stack trace in the browser, or rerun with --verbose.","label":null,"level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 15ms","label":null,"level":"info"}
+{"message":"[200] / 7ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"src/scripts/motion.ts","label":"watch","level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 12ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"src/scripts/motion.ts","label":"watch","level":"info"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"[200] / 9ms","label":null,"level":"info"}
+{"message":"[200] / 9ms","label":null,"level":"info"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"[200] / 6ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 25ms","label":null,"level":"info"}
+{"message":"[200] / 25ms","label":null,"level":"info"}
+{"message":"[200] / 25ms","label":null,"level":"info"}
+{"message":"[200] / 2ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 3ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 5ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 21ms","label":null,"level":"info"}
+{"message":"[200] / 21ms","label":null,"level":"info"}
+{"message":"[200] / 21ms","label":null,"level":"info"}
+{"message":"[200] / 16ms","label":null,"level":"info"}
+{"message":"[200] / 17ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"src/scripts/motion.ts","label":"watch","level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 13ms","label":null,"level":"info"}
+{"message":"[200] / 66ms","label":null,"level":"info"}
+{"message":"[Unhandled error] TypeError: Cannot read properties of undefined (reading 'nodeName')\n > ShadowRoot.<anonymous> node_modules/astro/dist/runtime/client/dev-toolbar/ui-library/select.js:73:21\n","label":"vite","level":"error"}
+{"message":"[200] / 8ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 22ms","label":null,"level":"info"}
+{"message":"[200] / 22ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"/src/styles/global.css","label":"watch","level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] / 4ms","label":null,"level":"info"}
+{"message":"[200] / 8ms","label":null,"level":"info"}

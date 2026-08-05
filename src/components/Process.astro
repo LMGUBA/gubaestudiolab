@@ -1,0 +1,133 @@
+---
+import Icon from './Icon.astro';
+
+const steps = [
+  {
+    number: '01',
+    icon: 'search',
+    title: 'ENTENDER',
+    description:
+      'Definimos objetivos, audiencia, contenido y si conviene una web estática o dinámica.',
+  },
+  {
+    number: '02',
+    icon: 'blocks',
+    title: 'DISEÑAR Y DESARROLLAR',
+    description: 'Creamos la experiencia, construimos cada página y conectamos las funciones necesarias.',
+  },
+  {
+    number: '03',
+    icon: 'chart-no-axes-combined',
+    title: 'PUBLICAR Y EVOLUCIONAR',
+    description: 'Configuramos dominio, rendimiento y analítica. Después medimos y priorizamos mejoras.',
+  },
+] as const;
+
+const outcomes = [
+  { icon: 'timer-reset', text: 'Tu oferta se entiende en pocos segundos.' },
+  {
+    icon: 'repeat-2',
+    text: 'Las personas encuentran una ruta clara para contactarte o solicitar información.',
+  },
+  {
+    icon: 'chart-no-axes-column',
+    text: 'El contenido y las funciones pueden evolucionar con el negocio.',
+  },
+] as const;
+---
+
+<section
+  id="proceso"
+  class="box-border w-full h-fit shrink-0 flex flex-col gap-12 sm:gap-16 3xl:gap-[78px] px-5 sm:px-8 lg:px-12 3xl:px-[120px] py-20 sm:py-24 lg:py-28 3xl:py-[130px] justify-start items-start bg-[#FFFFFF]"
+>
+  <div
+    class="box-border w-full h-fit shrink-0 flex flex-col lg:flex-row gap-6 lg:gap-0 justify-between items-start lg:items-end"
+  >
+    <h2
+      data-reveal
+      class="text-[clamp(32px,4.7vw,64px)]/[1.016] 3xl:text-[64px]/[65px] box-border w-full lg:w-[60%] 3xl:w-[720px] lg:shrink-0 text-[#151515] font-[Anton,system-ui,sans-serif] font-normal text-left"
+    >
+      DE LA IDEA A UNA WEB PUBLICADA Y LISTA PARA CRECER.
+    </h2>
+    <p
+      data-reveal
+      style="--reveal-delay:120ms"
+      class="text-[17px]/[25px] sm:text-[18px]/[26px] box-border w-full lg:w-[32%] 3xl:w-[390px] lg:shrink-0 text-[#4B5563] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left"
+    >
+      Trabajamos por etapas visibles. Revisas estructura, contenido y diseño antes de pasar al
+      desarrollo y publicación.
+    </p>
+  </div>
+
+  <ol
+    class="[box-sizing:content-box] w-full h-auto 3xl:h-[229.5px] shrink-0 flex flex-col lg:flex-row gap-0 justify-start items-stretch 3xl:items-start [border-width:1px_0px_0px_0px] [border-style:solid] [border-color:#D9DEE8] [margin:-0.5px_0px_0px_0px]"
+  >
+    {
+      steps.map((step, i) => (
+        <li
+          data-reveal
+          style={`--reveal-delay:${i * 120}ms`}
+          class="u-step u-icon-host box-border lg:[box-sizing:content-box] w-full lg:w-[399.5px] lg:[flex:1_1_0] h-auto 3xl:h-[230px] flex flex-col gap-6 3xl:gap-[38px] p-[28px_0px_24px_0px] lg:p-[34px_30px_18px_30px] justify-start items-start [border-width:0px_0px_1px_0px] lg:[border-width:0px_1px_0px_0px] [border-style:solid] [border-color:#D9DEE8] [margin:0px_0px_-0.5px_0px] lg:[margin:0px_-0.5px_0px_0px]"
+        >
+          <div class="box-border w-full h-fit shrink-0 flex flex-row gap-0 justify-between items-center">
+            <span class="u-step__num text-[13px]/[normal] box-border text-[#0062FF] font-['Geist_Mono',system-ui,sans-serif] font-bold text-left [white-space:nowrap]">
+              {step.number}
+            </span>
+            <Icon
+              name={step.icon}
+              fill="#151515"
+              class="u-icon-pop box-border w-[26px] shrink-0 h-[26px]"
+            />
+          </div>
+          <div class="box-border w-full h-fit shrink-0 flex flex-col gap-[12px] justify-start items-start">
+            <h3 class="text-[clamp(26px,2.7vw,36px)]/[normal] 3xl:text-[36px]/[normal] box-border text-[#151515] font-[Anton,system-ui,sans-serif] font-normal text-left 3xl:[white-space:nowrap]">
+              {step.title}
+            </h3>
+            <p class="text-[16px]/[24px] box-border w-full text-[#4B5563] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left">
+              {step.description}
+            </p>
+          </div>
+        </li>
+      ))
+    }
+  </ol>
+
+  <div
+    data-reveal
+    style="--reveal-y:34px"
+    class="box-border w-full h-auto 3xl:h-[280px] shrink-0 flex flex-col lg:flex-row gap-0 justify-start items-stretch 3xl:items-start bg-[#EEF4FF] rounded-[8px] overflow-hidden"
+  >
+    <div
+      class="box-border w-full lg:w-[380px] 3xl:w-[420px] lg:shrink-0 h-auto lg:h-full flex flex-col gap-6 3xl:gap-0 p-7 sm:p-9 3xl:p-[36px] justify-between items-start bg-[#0062FF]"
+    >
+      <p
+        class="text-[11px]/[normal] box-border text-[#FFFFFF] font-['Geist_Mono',system-ui,sans-serif] font-bold text-left [white-space:nowrap]"
+      >
+        AL PUBLICAR
+      </p>
+      <h3
+        class="text-[clamp(28px,3.1vw,42px)]/[1.048] 3xl:text-[42px]/[44px] box-border w-full text-[#FFFFFF] font-[Anton,system-ui,sans-serif] font-normal text-left"
+      >
+        TU NEGOCIO GANA UN CANAL DIGITAL CLARO, RÁPIDO Y PROPIO.
+      </h3>
+    </div>
+    <ul
+      class="box-border w-full lg:[flex:1_1_0] h-auto lg:h-full flex flex-col gap-0 p-[16px_28px] sm:p-[24px_36px] 3xl:p-[24px_44px] justify-center items-start"
+    >
+      {
+        outcomes.map((outcome) => (
+          <li class="u-outcome u-icon-host [box-sizing:content-box] w-full h-auto 3xl:h-[54.5px] shrink-0 flex flex-row gap-[16px] p-[16px_0px] justify-start items-center [border-width:0px_0px_1px_0px] [border-style:solid] [border-color:#C8D5ED] [margin:0px_0px_-0.5px_0px]">
+            <Icon
+              name={outcome.icon}
+              fill="#0062FF"
+              class="u-icon-pop box-border w-[22px] shrink-0 h-[22px]"
+            />
+            <span class="text-[16px]/[22px] sm:text-[18px]/[normal] box-border text-[#151515] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left 3xl:[white-space:nowrap]">
+              {outcome.text}
+            </span>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

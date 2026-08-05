@@ -1,0 +1,50 @@
+---
+// Barra que aparece al dejar atrás el hero: navegación siempre a mano,
+// sección activa resaltada y barra de progreso de lectura.
+const navLinks = [
+  { label: 'Servicios', href: '#servicios' },
+  { label: 'Trabajo', href: '#trabajo' },
+  { label: 'Proceso', href: '#proceso' },
+];
+---
+
+<div class="sticky-nav" data-sticky-nav>
+  <div
+    class="box-border w-full max-w-[1440px] mx-auto h-[64px] flex flex-row gap-6 px-5 sm:px-8 lg:px-12 3xl:px-[72px] justify-between items-center"
+  >
+    <a href="#hero" class="box-border w-fit shrink-0 h-fit flex flex-row gap-[10px] justify-start items-center u-arrow-host">
+      <div class="box-border w-[12px] shrink-0 h-[24px] bg-[#C8FF2E]"></div>
+      <span
+        class="text-[18px]/[normal] sm:text-[20px]/[normal] box-border text-[#FFFFFF] font-[Anton,system-ui,sans-serif] font-normal tracking-[0.5px] text-left [white-space:nowrap]"
+      >
+        GUBA ESTUDIO LAB
+      </span>
+    </a>
+
+    <nav class="hidden md:flex flex-row gap-[30px] justify-start items-center">
+      {
+        navLinks.map((link) => (
+          <a
+            href={link.href}
+            data-nav-link
+            class="u-link text-[14px]/[normal] box-border text-[#C9D1E3] font-['Funnel_Sans',system-ui,sans-serif] font-semibold text-left [white-space:nowrap]"
+          >
+            {link.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <a
+      href="#contacto"
+      class="u-btn u-btn--lime u-sheen box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[10px_18px] justify-start items-center bg-[#C8FF2E] rounded-[9999px]"
+    >
+      <span
+        class="text-[14px]/[normal] box-border text-[#0B1020] font-['Funnel_Sans',system-ui,sans-serif] font-extrabold text-left [white-space:nowrap]"
+      >
+        Hablemos
+      </span>
+    </a>
+  </div>
+  <div class="sticky-nav__progress" data-progress></div>
+</div>

@@ -1,0 +1,17 @@
+---
+import Icon from './Icon.astro';
+
+// Es un ancla, no un botón: así funciona aunque el JS no cargue. El script
+// solo decide cuándo se muestra. El salto suave lo da `scroll-behavior` del
+// CSS, que ya se desactiva con `prefers-reduced-motion`.
+---
+
+<a
+  href="#hero"
+  data-back-to-top
+  aria-label="Volver al inicio de la página"
+  title="Volver arriba"
+  class="to-top box-border w-[52px] h-[52px] flex flex-row gap-0 justify-center items-center bg-[#C8FF2E] rounded-[9999px]"
+>
+  <Icon name="move-right" fill="#0B1020" class="to-top__icon box-border w-[22px] shrink-0 h-[22px]" />
+</a>
