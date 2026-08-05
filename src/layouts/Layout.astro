@@ -32,7 +32,7 @@ const structuredData = {
       telephone: site.phoneE164,
       email: site.emailPlain,
       image: imageUrl,
-      logo: `${site.url}/favicon.svg`,
+      logo: `${site.url}/logo-guba.png`,
       priceRange: '$$',
       address: {
         '@type': 'PostalAddress',
@@ -76,8 +76,12 @@ const structuredData = {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
+    {/* Google toma el favicon del .ico o del PNG y lo muestra a 16px junto al
+        resultado. Necesita ser cuadrado y estar en el mismo dominio. */}
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="generator" content={Astro.generator} />
 
     <title>{title}</title>
