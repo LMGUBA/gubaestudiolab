@@ -1,0 +1,114 @@
+---
+import { faq } from '../data/faq';
+import { site } from '../config';
+
+// El mismo contenido que se ve en pantalla se declara como FAQPage. Google
+// exige que coincidan: si el JSON-LD dice algo que el usuario no puede leer,
+// el marcado se ignora o se penaliza.
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  '@id': `${site.url}/#faq`,
+  inLanguage: 'es-PE',
+  mainEntity: faq.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer },
+  })),
+};
+---
+
+<section
+  id="preguntas"
+  class="box-border w-full h-fit shrink-0 flex flex-col gap-10 sm:gap-14 3xl:gap-[64px] px-5 sm:px-8 lg:px-12 3xl:px-[120px] pt-20 sm:pt-24 lg:pt-28 3xl:pt-[120px] pb-16 sm:pb-20 lg:pb-24 3xl:pb-[110px] justify-start items-start bg-[#FFFFFF]"
+>
+  <div
+    class="box-border w-full h-fit shrink-0 flex flex-col lg:flex-row gap-6 lg:gap-0 justify-between items-start lg:items-end"
+  >
+    <div
+      data-reveal
+      class="box-border w-full lg:w-[63%] 3xl:w-[760px] lg:shrink-0 h-fit flex flex-col gap-[16px] justify-start items-start"
+    >
+      <p
+        class="text-[12px]/[normal] box-border text-[#0062FF] font-['Geist_Mono',system-ui,sans-serif] font-bold tracking-[1px] text-left [white-space:nowrap]"
+      >
+        PREGUNTAS FRECUENTES
+      </p>
+      <h2
+        class="text-[clamp(32px,4.7vw,64px)]/[1.016] 3xl:text-[64px]/[65px] box-border w-full text-[#151515] font-[Anton,system-ui,sans-serif] font-normal text-left"
+      >
+        LO QUE NOS PREGUNTAN ANTES DE EMPEZAR
+      </h2>
+    </div>
+    <p
+      data-reveal
+      style="--reveal-delay:120ms"
+      class="text-[17px]/[26px] sm:text-[19px]/[28px] box-border w-full lg:w-[32%] 3xl:w-[390px] lg:shrink-0 text-[#4B5563] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left"
+    >
+      Respuestas directas sobre alcance, precios, plazos y soporte. Si falta la tuya, escríbenos por
+      WhatsApp.
+    </p>
+  </div>
+
+  <div
+    data-reveal
+    style="--reveal-delay:180ms"
+    class="box-border w-full h-fit shrink-0 flex flex-col gap-0 justify-start items-start"
+  >
+    {
+      faq.map((item, i) => (
+        <details
+          class="faq-item group box-border w-full [border-width:0px_0px_1px_0px] [border-style:solid] [border-color:#D9DEE8]"
+          open={i === 0}
+        >
+          <summary class="faq-summary box-border w-full flex flex-row gap-5 py-6 sm:py-7 justify-between items-start cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+            <h3 class="text-[18px]/[26px] sm:text-[21px]/[30px] box-border text-[#151515] font-['Funnel_Sans',system-ui,sans-serif] font-bold text-left">
+              {item.question}
+            </h3>
+            <span
+              aria-hidden="true"
+              class="faq-plus box-border w-[26px] shrink-0 h-[26px] mt-[2px] flex items-center justify-center text-[24px]/[1] text-[#0062FF] font-['Geist_Mono',system-ui,sans-serif] font-normal"
+            >
+              +
+            </span>
+          </summary>
+          <p class="text-[16px]/[26px] sm:text-[17px]/[28px] box-border w-full lg:w-[80%] 3xl:w-[900px] text-[#4B5563] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left pb-7">
+            {item.answer}
+          </p>
+        </details>
+      ))
+    }
+  </div>
+</section>
+
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} is:inline />
+
+<style>
+  /* El signo "+" gira hasta convertirse en "×" al abrir la respuesta. */
+  .faq-plus {
+    transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .faq-item[open] .faq-plus {
+    transform: rotate(135deg);
+  }
+
+  .faq-summary:hover h3 {
+    color: #0062ff;
+  }
+
+  .faq-summary h3 {
+    transition: color 0.2s ease;
+  }
+
+  .faq-summary:focus-visible {
+    outline: 2px solid #0062ff;
+    outline-offset: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .faq-plus {
+      transition: none;
+    }
+  }
+</style>

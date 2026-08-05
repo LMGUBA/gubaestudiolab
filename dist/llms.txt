@@ -1,0 +1,33 @@
+# GUBA ESTUDIO LAB
+
+> Estudio de diseño y desarrollo web con base en Pucallpa, Ucayali, Perú. Construye sitios web estáticos para comunicar con claridad y plataformas web dinámicas para operar, publicar y gestionar datos. Ofrece automatización de procesos como servicio independiente.
+
+También conocido como: GUBA ESTUDIO, Guba Estudio Lab.
+
+- **Sitio web**: https://www.gubaestudio.com
+- **Ubicación**: Pucallpa, Ucayali, Perú
+- **Atiende**: todo el Perú y clientes en el extranjero, de forma remota
+- **WhatsApp**: +51 945 092 299
+- **Correo**: luisguerebalvin@gmail.com
+- **Idioma**: español
+
+## Servicios
+
+- **Sitios web estáticos**: páginas informativas rápidas, seguras y fáciles de mantener. Para presentar un negocio, un portafolio o un catálogo que cambia poco.
+- **Plataformas web dinámicas**: sitios con cuentas de usuario, paneles de administración, formularios que guardan información, contenido editable y gestión de datos.
+- **Automatización de procesos**: conexión de herramientas y eliminación de tareas repetitivas. Proyecto independiente, con alcance y presupuesto propios.
+- **Soporte y evolución**: mantenimiento, nuevas secciones, mejoras de rendimiento y acompañamiento después del lanzamiento.
+
+## Cómo trabaja
+
+1. **Definir objetivo** — qué debe lograr la página, para qué negocio y qué audiencia.
+2. **Elegir alcance** — estática o dinámica, sin complejidad innecesaria.
+3. **Diseñar experiencia** — contenido e interfaz.
+4. **Publicar y medir** — dominio, analítica y seguimiento de resultados.
+
+El presupuesto se cierra antes de empezar, y el primer lanzamiento se mantiene acotado y realista para después crecer por etapas.
+
+## Enlaces
+
+- [Sitio principal](https://www.gubaestudio.com): servicios, proyectos, proceso y preguntas frecuentes.
+- [Preguntas frecuentes](https://www.gubaestudio.com#preguntas): diferencias entre web estática y dinámica, precios, plazos, cobertura geográfica, tecnologías y mantenimiento.
