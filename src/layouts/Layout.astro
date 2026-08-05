@@ -5,27 +5,112 @@ import { site } from '../config';
 interface Props {
   title?: string;
   description?: string;
+  /** Ruta a la imagen social, relativa a la raíz del sitio. */
+  image?: string;
 }
 
-const { title = site.name, description = site.description } = Astro.props;
+const { title = site.name, description = site.description, image = '/og-image.png' } = Astro.props;
+
+// Astro.site viene de `site` en astro.config.mjs. La canónica se arma con la
+// ruta actual para que cada página apunte a sí misma.
+const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, '') || site.url;
+const imageUrl = new URL(image, Astro.site).href;
+
+// Datos estructurados: le dicen a Google que "GUBA ESTUDIO" y "GUBA ESTUDIO
+// LAB" son la misma empresa, dónde opera y cómo contactarla. Es lo que
+// alimenta el panel de marca en los resultados de búsqueda.
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ProfessionalService',
+      '@id': `${site.url}/#estudio`,
+      name: site.name,
+      alternateName: [site.shortName, 'Guba Estudio', 'Guba Estudio Lab'],
+      description: site.description,
+      url: site.url,
+      telephone: site.phoneE164,
+      email: site.emailPlain,
+      image: imageUrl,
+      logo: `${site.url}/favicon.svg`,
+      priceRange: '$$',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: site.address.city,
+        addressRegion: site.address.region,
+        addressCountry: site.address.country,
+      },
+      areaServed: [
+        { '@type': 'Country', name: 'Perú' },
+        { '@type': 'City', name: site.address.city },
+      ],
+      knowsLanguage: ['es'],
+      ...(site.profiles.length > 0 ? { sameAs: site.profiles } : {}),
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Servicios web',
+        itemListElement: [
+          'Diseño de páginas web estáticas',
+          'Desarrollo de plataformas web dinámicas',
+          'Automatización de procesos',
+        ].map((servicio) => ({
+          '@type': 'Offer',
+          itemOffered: { '@type': 'Service', name: servicio },
+        })),
+      },
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${site.url}/#sitio`,
+      url: site.url,
+      name: site.name,
+      inLanguage: 'es-PE',
+      publisher: { '@id': `${site.url}/#estudio` },
+    },
+  ],
+};
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es-PE">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="author" content={site.name} />
+    <meta name="theme-color" content="#0062FF" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:locale" content="es_PE" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`${site.name} — estudio de diseño y desarrollo web`} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
+
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} is:inline />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Anton%3Awght%40400&family=Funnel+Sans%3Awght%40300..800&family=Geist+Mono%3Awght%40100..900&display=swap"
       rel="stylesheet"
     />
-    <title>{title}</title>
     {/* Marca que hay JS antes de pintar: sin esto el contenido animado
         parpadearía o quedaría oculto si el script falla. */}
     <script is:inline>
