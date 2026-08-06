@@ -1,0 +1,94 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SeoLanding from '../components/SeoLanding.astro';
+import { seoPages, type SeoPage } from '../data/seo-pages';
+import { site } from '../config';
+
+export function getStaticPaths() {
+  return seoPages.map((page) => ({
+    params: { slug: page.slug },
+    props: { page },
+  }));
+}
+
+interface Props {
+  page: SeoPage;
+}
+
+const { page } = Astro.props;
+const url = `${site.url}/${page.slug}`;
+
+const pageSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': `${url}#pagina`,
+      url,
+      name: page.title,
+      description: page.description,
+      inLanguage: 'es-PE',
+      isPartOf: { '@id': `${site.url}/#sitio` },
+      about: { '@id': `${url}#servicio` },
+      breadcrumb: { '@id': `${url}#migas` },
+    },
+    {
+      '@type': 'Service',
+      '@id': `${url}#servicio`,
+      name: page.serviceType,
+      description: page.description,
+      url,
+      provider: { '@id': `${site.url}/#estudio` },
+      areaServed: [
+        { '@type': 'Country', name: 'Perú' },
+        { '@type': 'City', name: site.address.city },
+        { '@type': 'AdministrativeArea', name: site.address.region },
+      ],
+      availableChannel: {
+        '@type': 'ServiceChannel',
+        serviceUrl: url,
+        servicePhone: {
+          '@type': 'ContactPoint',
+          telephone: site.phoneE164,
+          contactType: 'sales',
+          availableLanguage: ['Spanish'],
+        },
+      },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${url}#migas`,
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Inicio',
+          item: site.url,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: page.serviceType,
+          item: url,
+        },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${url}#preguntas`,
+      mainEntity: page.faqs.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
+    },
+  ],
+};
+---
+
+<Layout title={page.title} description={page.description} pageSchema={pageSchema}>
+  <SeoLanding page={page} />
+</Layout>

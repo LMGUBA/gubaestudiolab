@@ -7,23 +7,31 @@ interface Props {
   description?: string;
   /** Ruta a la imagen social, relativa a la raíz del sitio. */
   image?: string;
+  /** Datos estructurados específicos de la página. */
+  pageSchema?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-const { title = site.name, description = site.description, image = '/og-image.png' } = Astro.props;
+const {
+  title = site.name,
+  description = site.description,
+  image = '/og-image.png',
+  pageSchema,
+} = Astro.props;
+const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 
 // Astro.site viene de `site` en astro.config.mjs. La canónica se arma con la
 // ruta actual para que cada página apunte a sí misma.
 const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, '') || site.url;
 const imageUrl = new URL(image, Astro.site).href;
 
-// Datos estructurados: le dicen a Google que "GUBA ESTUDIO" y "GUBA ESTUDIO
-// LAB" son la misma empresa, dónde opera y cómo contactarla. Es lo que
-// alimenta el panel de marca en los resultados de búsqueda.
+// Datos estructurados: ayudan a Google a identificar la marca, los datos de
+// contacto y los servicios. La ubicación física completa se gestiona en el
+// Perfil de Empresa de Google, por eso aquí usamos Organization.
 const structuredData = {
   '@context': 'https://schema.org',
   '@graph': [
     {
-      '@type': 'ProfessionalService',
+      '@type': 'Organization',
       '@id': `${site.url}/#estudio`,
       name: site.name,
       alternateName: [site.shortName, 'Guba Estudio', 'Guba Estudio Lab'],
@@ -90,6 +98,7 @@ const structuredData = {
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
     <meta name="author" content={site.name} />
     <meta name="theme-color" content="#0062FF" />
+    {googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />}
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={site.name} />
@@ -108,6 +117,9 @@ const structuredData = {
     <meta name="twitter:image" content={imageUrl} />
 
     <script type="application/ld+json" set:html={JSON.stringify(structuredData)} is:inline />
+    {pageSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} is:inline />
+    )}
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

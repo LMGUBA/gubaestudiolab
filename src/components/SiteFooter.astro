@@ -5,10 +5,19 @@ const columns = [
   {
     heading: 'EXPLORA',
     links: [
-      { label: 'Servicios', href: '#servicios' },
-      { label: 'Trabajo', href: '#trabajo' },
-      { label: 'Proceso', href: '#proceso' },
-      { label: 'Preguntas', href: '#preguntas' },
+      { label: 'Servicios', href: '/#servicios' },
+      { label: 'Trabajo', href: '/#trabajo' },
+      { label: 'Proceso', href: '/#proceso' },
+      { label: 'Preguntas', href: '/#preguntas' },
+    ],
+  },
+  {
+    heading: 'SOLUCIONES',
+    links: [
+      { label: 'Web en Pucallpa', href: '/diseno-paginas-web-pucallpa' },
+      { label: 'Webs estáticas', href: '/paginas-web-estaticas' },
+      { label: 'Webs dinámicas', href: '/plataformas-web-dinamicas' },
+      { label: 'Automatización', href: '/automatizacion-de-procesos' },
     ],
   },
   {
@@ -16,7 +25,7 @@ const columns = [
     links: [
       { label: 'WhatsApp', href: site.whatsapp },
       { label: 'Correo', href: site.email },
-      { label: 'Pucallpa, Perú', href: '#contacto' },
+      { label: 'Pucallpa, Perú', href: '/diseno-paginas-web-pucallpa' },
     ],
   },
 ];
@@ -47,7 +56,7 @@ const columns = [
       </p>
     </div>
     <div
-      class="box-border w-full md:w-fit md:shrink-0 h-fit flex flex-row gap-10 sm:gap-[60px] justify-start items-start"
+      class="box-border w-full md:w-fit md:shrink-0 h-fit flex flex-row flex-wrap gap-x-10 sm:gap-x-[52px] gap-y-8 justify-start items-start"
     >
       {
         columns.map((column) => (
