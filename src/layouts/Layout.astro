@@ -17,7 +17,8 @@ const {
   image = '/og-image.png',
   pageSchema,
 } = Astro.props;
-const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
+const googleSiteVerification =
+  import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION || site.googleSiteVerification;
 
 // Astro.site viene de `site` en astro.config.mjs. La canónica se arma con la
 // ruta actual para que cada página apunte a sí misma.

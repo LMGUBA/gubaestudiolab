@@ -9,6 +9,8 @@ export const site = {
   url: 'https://www.gubaestudio.com',
   description:
     'Diseñamos y desarrollamos sitios web estáticos para comunicar con claridad, y plataformas dinámicas para operar, publicar y escalar.',
+  // Verificación permanente de la propiedad URL-prefix en Google Search Console.
+  googleSiteVerification: 'YnlLTPNSeMOpIOjiecCUut25mGbMK4ee-YbK0i4e2us',
   // WhatsApp: +51 945 092 299
   whatsapp: 'https://wa.me/51945092299',
   phone: 'tel:+51945092299',
