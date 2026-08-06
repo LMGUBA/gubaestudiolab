@@ -1,0 +1,90 @@
+---
+import { Image } from 'astro:assets';
+import Icon from './Icon.astro';
+import mockup from '../assets/mockup-mixtura.png';
+
+// Mismo proyecto que la tarjeta de Mixtura en #trabajo: aquí es el gancho
+// visual, allá está el detalle.
+const mixturaUrl = 'https://cevicheriarestaurantmixtura.vercel.app';
+---
+
+<section
+  id="muestra"
+  class="box-border w-full h-fit shrink-0 flex flex-col gap-10 sm:gap-12 3xl:gap-[56px] px-5 sm:px-8 lg:px-12 3xl:px-[120px] pt-16 sm:pt-20 lg:pt-24 3xl:pt-[100px] pb-16 sm:pb-20 lg:pb-24 3xl:pb-[110px] justify-start items-center bg-[#0B1020]"
+>
+  <div
+    class="box-border w-full h-fit shrink-0 flex flex-col lg:flex-row gap-6 lg:gap-10 justify-between items-start lg:items-end"
+  >
+    <div
+      data-reveal
+      class="box-border w-full lg:w-[62%] 3xl:w-[760px] lg:shrink-0 h-fit flex flex-col gap-[16px] justify-start items-start"
+    >
+      <div class="box-border w-fit h-fit shrink-0 flex flex-row gap-[10px] justify-start items-center">
+        <div class="u-pulse box-border w-[8px] shrink-0 h-[8px] bg-[#C8FF2E] rounded-full"></div>
+        <p
+          class="text-[11px]/[normal] sm:text-[12px]/[normal] box-border text-[#C8FF2E] font-['Geist_Mono',system-ui,sans-serif] font-bold tracking-[1px] text-left [white-space:nowrap]"
+        >
+          PROYECTO DESTACADO
+        </p>
+      </div>
+      <h2
+        class="text-[clamp(30px,4.6vw,62px)]/[1.016] 3xl:text-[62px]/[63px] box-border w-full text-[#FFFFFF] font-[Anton,system-ui,sans-serif] font-normal text-left"
+      >
+        ASÍ SE VE UNA WEB HECHA POR GUBA ESTUDIO LAB
+      </h2>
+    </div>
+    <p
+      data-reveal
+      style="--reveal-delay:120ms"
+      class="text-[17px]/[26px] sm:text-[18px]/[27px] box-border w-full lg:w-[32%] 3xl:w-[380px] lg:shrink-0 text-[#B6C0D4] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left"
+    >
+      El mismo sitio se adapta a computadora, laptop y teléfono sin perder claridad ni velocidad.
+    </p>
+  </div>
+
+  {/* La imagen es el gancho: por eso carga con prioridad alta y con las
+      dimensiones declaradas, para que no salte el layout al aparecer. */}
+  <div
+    data-reveal="zoom"
+    style="--reveal-delay:180ms"
+    class="showcase-frame box-border w-full 3xl:w-[1200px] h-auto rounded-[10px] overflow-hidden"
+  >
+    <Image
+      src={mockup}
+      alt="Sitio web de la cevichería Mixtura diseñado por GUBA ESTUDIO LAB, visto en computadora de escritorio, laptop y teléfono móvil"
+      widths={[640, 960, 1280, 1536]}
+      sizes="(max-width: 1024px) 100vw, (max-width: 1440px) 92vw, 1200px"
+      format="webp"
+      quality={80}
+      loading="eager"
+      fetchpriority="high"
+      class="block w-full h-auto"
+    />
+  </div>
+
+  <a
+    href={mixturaUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    data-reveal
+    style="--reveal-delay:240ms"
+    class="u-btn u-btn--lime u-sheen u-arrow-host box-border w-full sm:w-fit sm:shrink-0 h-fit flex flex-row gap-[10px] p-[15px_24px] sm:p-[16px_26px] justify-center items-center bg-[#C8FF2E] rounded-[9999px]"
+  >
+    <span
+      class="text-[16px]/[normal] box-border text-[#0B1020] font-['Funnel_Sans',system-ui,sans-serif] font-extrabold text-left [white-space:nowrap]"
+    >
+      Ver el sitio en vivo
+    </span>
+    <Icon name="arrow-up-right" fill="#0B1020" class="u-arrow box-border w-[18px] shrink-0 h-[18px]" />
+  </a>
+</section>
+
+<style>
+  /* El mockup viene con fondo blanco, así que sobre la sección oscura se
+     presenta como una tarjeta: el blanco del marco continúa el de la imagen y
+     la sombra profunda la despega del fondo. */
+  .showcase-frame {
+    background: #ffffff;
+    box-shadow: 0 24px 60px -12px rgb(0 0 0 / 0.55);
+  }
+</style>
