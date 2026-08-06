@@ -17,8 +17,8 @@ export const site = {
   phoneLabel: '+51 945 092 299',
   phoneE164: '+51945092299',
   // Correo de contacto del estudio.
-  email: 'mailto:luisguerebalvin@gmail.com',
-  emailPlain: 'luisguerebalvin@gmail.com',
+  email: 'mailto:guerebalvin.consultor@gmail.com',
+  emailPlain: 'guerebalvin.consultor@gmail.com',
   address: {
     city: 'Pucallpa',
     region: 'Ucayali',

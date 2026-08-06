@@ -22,7 +22,7 @@ export interface SeoPage {
 export const seoPages: SeoPage[] = [
   {
     slug: 'diseno-paginas-web-pucallpa',
-    title: 'Diseño de páginas web en Pucallpa | GUBA Estudio',
+    title: 'Diseño de páginas web en Pucallpa | GUBA ESTUDIO LAB',
     description:
       'Diseñamos páginas web en Pucallpa para negocios, profesionales y empresas de Ucayali. Sitios rápidos, claros y listos para convertir visitas en contactos.',
     label: 'SERVICIO LOCAL EN UCAYALI',
@@ -78,6 +78,10 @@ export const seoPages: SeoPage[] = [
         title: 'Medición y contacto',
         text: 'Preparamos eventos o analítica según el alcance y hacemos visibles WhatsApp, teléfono, correo o formulario.',
       },
+      {
+        title: 'Soporte y evolución',
+        text: 'Después de publicar seguimos disponibles para mantenimiento, nuevas secciones y mejoras de rendimiento.',
+      },
     ],
     decisionHeading: 'PÁGINA INFORMATIVA O PLATAFORMA DINÁMICA',
     decision: [
@@ -88,12 +92,12 @@ export const seoPages: SeoPage[] = [
       {
         question: '¿Cuánto cuesta una página web en Pucallpa?',
         answer:
-          'El precio depende del número de secciones, el contenido disponible y las funciones. Una página informativa cuesta menos que una plataforma con usuarios, pagos o panel administrativo. GUBA ESTUDIO LAB define el alcance y entrega un presupuesto cerrado antes de comenzar.',
+          'El precio depende del número de secciones, el contenido disponible y las funciones. Una página informativa cuesta menos que una plataforma con usuarios, pagos o panel administrativo. GUBA ESTUDIO LAB define el alcance y entrega un presupuesto cerrado antes de comenzar, sin costos variables durante el desarrollo. Puedes pedir una cotización por WhatsApp al +51 945 092 299.',
       },
       {
         question: '¿Atienden reuniones presenciales en Pucallpa?',
         answer:
-          'GUBA ESTUDIO LAB tiene base en Pucallpa. La coordinación puede realizarse por videollamada, WhatsApp o, cuando el proyecto lo requiere y se acuerda previamente, de forma presencial.',
+          'GUBA ESTUDIO LAB tiene base en Pucallpa, Ucayali. La coordinación puede realizarse por videollamada, WhatsApp o, cuando el proyecto lo requiere y se acuerda previamente, de forma presencial. El estudio también trabaja de forma remota con clientes de todo el Perú y del extranjero, y la entrega es siempre digital.',
       },
       {
         question: '¿La página aparecerá inmediatamente en Google?',
@@ -121,7 +125,7 @@ export const seoPages: SeoPage[] = [
   },
   {
     slug: 'paginas-web-estaticas',
-    title: 'Páginas web estáticas para negocios | GUBA Estudio',
+    title: 'Páginas web estáticas para negocios | GUBA ESTUDIO LAB',
     description:
       'Diseño y desarrollo de páginas web estáticas rápidas, seguras y fáciles de mantener para empresas, profesionales, portafolios y catálogos informativos.',
     label: 'SITIOS RÁPIDOS Y FÁCILES DE MANTENER',
@@ -177,6 +181,10 @@ export const seoPages: SeoPage[] = [
         title: 'Publicación segura',
         text: 'Configuramos dominio, HTTPS, canonicales, sitemap y los archivos necesarios para los buscadores.',
       },
+      {
+        title: 'Soporte y evolución',
+        text: 'Después de publicar seguimos disponibles para mantenimiento, nuevas secciones y mejoras de rendimiento.',
+      },
     ],
     decisionHeading: 'CUÁNDO UNA WEB ESTÁTICA DEJA DE SER SUFICIENTE',
     decision: [
@@ -199,6 +207,11 @@ export const seoPages: SeoPage[] = [
         answer:
           'Su velocidad, estabilidad y HTML accesible crean una buena base técnica. El posicionamiento también depende de la utilidad del contenido, la competencia de cada búsqueda, la autoridad del dominio y las referencias externas.',
       },
+      {
+        question: '¿Cómo se cotiza una página web estática?',
+        answer:
+          'GUBA ESTUDIO LAB define primero el objetivo del proyecto y después entrega un presupuesto cerrado antes de empezar, sin costos variables durante el desarrollo. El estudio tiene base en Pucallpa, Ucayali, y trabaja de forma remota con clientes de todo el Perú y del extranjero. Puedes pedir una cotización por WhatsApp al +51 945 092 299.',
+      },
     ],
     related: [
       {
@@ -220,7 +233,7 @@ export const seoPages: SeoPage[] = [
   },
   {
     slug: 'plataformas-web-dinamicas',
-    title: 'Plataformas web dinámicas en Perú | GUBA Estudio',
+    title: 'Plataformas web dinámicas en Perú | GUBA ESTUDIO LAB',
     description:
       'Desarrollamos plataformas web dinámicas con usuarios, paneles administrativos, formularios, contenido editable e integraciones para empresas en Perú.',
     label: 'SISTEMAS WEB PARA OPERAR Y PUBLICAR',
@@ -276,6 +289,10 @@ export const seoPages: SeoPage[] = [
         title: 'Evolución planificada',
         text: 'Documentamos decisiones y organizamos el código para agregar módulos sin rehacer la base del sistema.',
       },
+      {
+        title: 'Soporte y evolución',
+        text: 'Después de publicar seguimos disponibles para correcciones, monitoreo, nuevas funciones y acompañamiento.',
+      },
     ],
     decisionHeading: 'NO TODA EMPRESA NECESITA UNA PLATAFORMA',
     decision: [
@@ -298,6 +315,11 @@ export const seoPages: SeoPage[] = [
         answer:
           'El soporte se cotiza según la criticidad y la frecuencia de cambios. Puede incluir correcciones, monitoreo, copias, nuevas funciones y acompañamiento para revisar el uso del sistema.',
       },
+      {
+        question: '¿Cómo se cotiza una plataforma web dinámica?',
+        answer:
+          'GUBA ESTUDIO LAB define primero el objetivo del proyecto y después entrega un presupuesto cerrado antes de empezar, sin costos variables durante el desarrollo. El estudio tiene base en Pucallpa, Ucayali, y trabaja de forma remota con clientes de todo el Perú y del extranjero. Puedes pedir una cotización por WhatsApp al +51 945 092 299.',
+      },
     ],
     related: [
       {
@@ -319,7 +341,7 @@ export const seoPages: SeoPage[] = [
   },
   {
     slug: 'automatizacion-de-procesos',
-    title: 'Automatización de procesos para negocios | GUBA Estudio',
+    title: 'Automatización de procesos para negocios | GUBA ESTUDIO LAB',
     description:
       'Automatizamos tareas repetitivas y conectamos formularios, hojas de cálculo, correos y sistemas para reducir trabajo manual en empresas de Perú.',
     label: 'CONEXIÓN ENTRE TUS HERRAMIENTAS',
@@ -375,6 +397,10 @@ export const seoPages: SeoPage[] = [
         title: 'Pruebas y entrega',
         text: 'Probamos ejemplos reales, documentamos el flujo y acordamos cómo se mantendrán las credenciales.',
       },
+      {
+        title: 'Soporte y evolución',
+        text: 'Después de la entrega seguimos disponibles para ajustar reglas, cubrir casos nuevos y revisar el funcionamiento.',
+      },
     ],
     decisionHeading: 'AUTOMATIZACIÓN O PLATAFORMA A MEDIDA',
     decision: [
@@ -396,6 +422,11 @@ export const seoPages: SeoPage[] = [
         question: '¿Qué pasa si una automatización falla?',
         answer:
           'El flujo debe registrar el error y avisar al responsable cuando un paso importante no termina. El nivel de monitoreo y reintento se define según el impacto que tenga la tarea en el negocio.',
+      },
+      {
+        question: '¿Cómo se cotiza un proyecto de automatización?',
+        answer:
+          'GUBA ESTUDIO LAB revisa primero el proceso actual y después entrega un presupuesto cerrado antes de empezar, con alcance propio porque la automatización es un servicio independiente del desarrollo web. El estudio tiene base en Pucallpa, Ucayali, y trabaja de forma remota con clientes de todo el Perú y del extranjero. Puedes pedir una cotización por WhatsApp al +51 945 092 299.',
       },
     ],
     related: [
