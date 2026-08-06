@@ -11,21 +11,15 @@ const columns = [
       { label: 'Preguntas', href: '/#preguntas' },
     ],
   },
-  {
-    heading: 'SOLUCIONES',
-    links: [
-      { label: 'Web en Pucallpa', href: '/diseno-paginas-web-pucallpa' },
-      { label: 'Webs estáticas', href: '/paginas-web-estaticas' },
-      { label: 'Webs dinámicas', href: '/plataformas-web-dinamicas' },
-      { label: 'Automatización', href: '/automatizacion-de-procesos' },
-    ],
-  },
+  // El bloque SOLUCIONES se retiró de la navegación a propósito. Las cuatro
+  // landings siguen publicadas e indexadas (src/data/seo-pages.ts y el
+  // sitemap); solo dejaron de mostrarse al visitante.
   {
     heading: 'CONTACTO',
     links: [
       { label: 'WhatsApp', href: site.whatsapp },
       { label: 'Correo', href: site.email },
-      { label: 'Pucallpa, Perú', href: '/diseno-paginas-web-pucallpa' },
+      { label: 'Pucallpa, Perú', href: '/#contacto' },
     ],
   },
 ];

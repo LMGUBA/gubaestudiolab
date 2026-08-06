@@ -1,11 +1,9 @@
 ---
 import Icon from './Icon.astro';
 
-const webTags = [
-  { label: 'Sitios estáticos', href: '/paginas-web-estaticas' },
-  { label: 'Webs dinámicas', href: '/plataformas-web-dinamicas' },
-  { label: 'Diseño web en Pucallpa', href: '/diseno-paginas-web-pucallpa' },
-];
+// Etiquetas descriptivas, ya no enlaces: las landings de servicio se retiraron
+// de la navegación aunque siguen publicadas.
+const webTags = ['Sitios estáticos', 'Webs dinámicas', 'Diseño web en Pucallpa'];
 
 const capabilities = [
   'Sitios estáticos',
@@ -88,9 +86,9 @@ const capabilities = [
         {
           webTags.map((tag) => (
             <li class="u-tag box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[9px_12px] justify-start items-start [outline:1px_solid_#AFC5F2] [outline-offset:-0.5px] rounded-[9999px]">
-              <a href={tag.href} class="text-[13px]/[normal] box-border text-[#151515] font-['Funnel_Sans',system-ui,sans-serif] font-semibold text-left [white-space:nowrap]">
-                {tag.label}
-              </a>
+              <span class="text-[13px]/[normal] box-border text-[#151515] font-['Funnel_Sans',system-ui,sans-serif] font-semibold text-left [white-space:nowrap]">
+                {tag}
+              </span>
             </li>
           ))
         }
@@ -118,7 +116,7 @@ const capabilities = [
           <h3
             class="text-[clamp(28px,3vw,40px)]/[1.05] 3xl:text-[40px]/[42px] box-border w-full text-[#FFFFFF] font-[Anton,system-ui,sans-serif] font-normal text-left"
           >
-            <a href="/automatizacion-de-procesos">AUTOMATIZACIÓN</a>
+            AUTOMATIZACIÓN
           </h3>
           <p
             class="text-[16px]/[23px] box-border w-full text-[#C9D1E3] font-['Funnel_Sans',system-ui,sans-serif] font-normal text-left"
